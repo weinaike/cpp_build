@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mcp:
+    build:
+      context: /home/wnk/code/DesktopCommanderMCP
+      dockerfile: /home/wnk/code/wr124/cpp_build_new/dockerfile_cppbuild
+    image: cppbuild:latest
+    container_name: commander
+    hostname: commander
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    working_dir: /usr/src/app
+    environment:
+      - MCP_CLIENT_DOCKER=true
+      - TZ=Asia/Shanghai
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
