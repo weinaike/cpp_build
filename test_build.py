@@ -5,6 +5,7 @@
 import sys
 from pathlib import Path
 import asyncio
+from dotenv import load_dotenv
 # 添加当前目录到路径
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -26,4 +27,5 @@ async def test_single_project():
     return result
 
 if __name__ == "__main__":
+    load_dotenv()  # 加载环境变量
     asyncio.run(test_single_project())

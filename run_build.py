@@ -12,7 +12,7 @@ from autogen_agentchat.ui import Console
 from autogen_agentchat.base import TaskResult
 # 导入 wr124 模块
 from wr124 import run_team, STOP_REASON
-
+from dotenv import load_dotenv
 
 class MessageProcessor:
     """消息处理器：既显示Console输出，又进行逻辑判断"""
@@ -47,6 +47,13 @@ async def build_one(project, session_id=None):
     """
 
     research_mcp_file = f"./cpp_build_new/mcps/mcp_{project}_r.json"
+    
+    # 获取GitHub token
+    github_token = os.getenv('GITHUB_TOKEN')
+    if not github_token:
+        print("警告: 未找到 GITHUB_TOKEN 环境变量，GitHub API功能可能无法使用")
+        github_token = ""
+    
     json_config = {
         "mcpServers": {
                 "command": {
@@ -58,7 +65,7 @@ async def build_one(project, session_id=None):
                 "type": "streamable_http",
                 "url": "https://api.githubcopilot.com/mcp",
                 "headers": {
-                    "Authorization": "Bearer ${GITHUB_TOKEN}"
+                    "Authorization": f"Bearer {github_token}"
                 }
             }
         },
@@ -96,18 +103,21 @@ async def build_one(project, session_id=None):
             print(f"\n--- 步骤 1: 执行深度研究智能体 (迭代 {iteration}) ---")
             if iteration == 1:
                 research_task = (
-                    f"深入研究代码库，分析其所提供的说明文档、安装文档、设计指南以及散落在互联网上的各开发者的经验博客。"
-                    f"要求输出一份适合本操作系统使用的代码库编译安装指南（要求输出指南文档，包含所有编译、构建、安装所涉及的各个环节），"
+                    f"深入研究代码库，分析其所提供的说明文档({project}_doc/ , doc/)、安装文档(README INSTALL COMPILE等)、设计指南（guideline）以及散落在互联网上的各开发者的经验博客。"
+                    f"start_search / grep 等 工具可以用来检索代码库和相关文档。search_agent 工具可以用来检索互联网信息。"
+                    f"要求输出一份`适合本操作系统`使用的代码库编译安装指南（要求输出指南文档，包含所有编译、构建、安装所涉及的各个环节），"
                     f"将文档写到项目根目录下: BUILD.md "
                     f"如果BUILD.md已经存在，则说明该任务已经完成，跳过该任务。"
                     f"代码库地址/root/project/."
+                    f"注意：你的任务是生成编译安装指南，而不是直接进行编译安装"
                 )
             else:
                 research_task = (
-                    f"基于上次迭代生成的编译安装指南（BUILD.md）和构建报告issues 目录下最新的的（build_report_x.md），"
-                    f"结合代码库现状，重新审视编译安装方案."
-                    f"如果发现上次方案中存在问题或遗漏，或者有更优的方案，请更新编译安装指南（BUILD.md）。注意详细说明修改点和原因。"
+                    f"基于上次迭代生成的编译安装指南（BUILD.md）和构建报告issues 目录下最新的的（build_report_x.md），结合代码库现状，识别关键问题"
+                    f"检索github issues中相关的讨论和解决方案，互联网中相关的博客和文章，是否包含类似解决方案。"
+                    f"深入思考出现该问题的本质原因，确认cpp_builder的工作是否沿着正确的道路上前进。将针对这些问题的解决方案写到项目根目录下: issues/build_solution_x.md"
                     f"代码库地址/root/project/."
+                    f"注意：你的任务是更新编译安装指南，而不是直接进行编译安装"
                 )
             
             # 创建研究智能体的参数
@@ -118,7 +128,7 @@ async def build_one(project, session_id=None):
             research_args.env_file = None
             research_args.interactive = True
             research_args.debug = False
-            research_args.resume = False
+            research_args.resume = True
             research_args.session_id = session_id
             research_args.config_file = research_mcp_file
 
@@ -137,14 +147,21 @@ async def build_one(project, session_id=None):
             
             # 第二步：执行 cpp_build_engineer 智能体
             print(f"\n--- 步骤 2: 执行构建工程师智能体 (迭代 {iteration}) ---")
-            
-            build_task = (
-                f"项目地址:/root/project/. 帮我完成该项目的cpp代码编译构建。"
-                f"适于本系统环境的编译构建指南 BUILD.md 已经生成在项目根目录下，遵循该指南完成编译构建工作。"
-                f"编译构建过程中可能遇到各类问题：比如编译器版本、标准库版本、第三方库版本等，"
-                f"这些问题解决思路：先收集信息制定方案，方案确定后再开展具体修复工作。"
-                f"该代码库是一个成熟代码库，优先从系统环境、编译环境、依赖问题等方面，版本依赖可以根据需要调整，尽量避免代码修改。"
-            )
+            if iteration == 1:
+                build_task = (
+                    f"项目地址:/root/project/. 帮我完成该项目的基于cpp源代码的编译构建。"
+                    f"适于本系统环境的编译构建指南 BUILD.md 已经生成在项目根目录下，遵循该指南完成编译构建工作。"
+                    f"编译构建过程中的两点主要原则：1. 编译器版本、标准库版本、第三方库版本等，gcc版本/clang版本优先使用系统自带版本。"
+                    f"2. 该代码库是一个成熟代码库，优先从系统环境、编译环境、依赖问题等方面，版本依赖可以根据需要调整，尽量避免代码修改。"
+                )
+            else:
+                build_task = (
+                    f"项目地址:/root/project/. 帮我完成该项目的cpp代码编译构建。"
+                    f"上次迭代中，你已经尝试过构建，遇到了一些问题。issues 目录下有最新的构建报告（build_report_x.md），并由deep_researcher生成build_solution_x.md 解决方案建议。"
+                    f"参考新的建议方案，继续开展编译构建工作，尝试解决所有编译问题，完成基于源码的编译构建工作。"
+                    f"编译构建过程中的两点主要原则：1. 编译器版本、标准库版本、第三方库版本等，gcc版本/clang版本优先使用系统自带版本。"
+                    f"2. 该代码库是一个成熟代码库，优先从系统环境、编译环境、依赖问题等方面，版本依赖可以根据需要调整，尽量避免代码修改。"
+                )
             
             # 创建构建智能体的参数
             build_args = Namespace()
@@ -154,7 +171,7 @@ async def build_one(project, session_id=None):
             build_args.env_file = None
             build_args.interactive = True
             build_args.debug = False
-            build_args.resume = False
+            build_args.resume = True
             build_args.session_id = session_id
             build_args.config_file = build_mcp_file
             
@@ -317,7 +334,7 @@ async def build_single_project(project_name: str):
 
 
 if __name__ == "__main__":    
-    
+    load_dotenv()  # 加载环境变量
     projects = [
         "arangodb",
         "blender",
@@ -337,9 +354,15 @@ if __name__ == "__main__":
     ]
 
     # 支持命令行参数指定单个项目
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 2:
         project_name = sys.argv[1]
-        asyncio.run(build_single_project(project_name))
+        asyncio.run(build_single_project(project_name))    
+    elif len(sys.argv) > 2:
+        start = int(sys.argv[1])
+        end = int(sys.argv[2])
+        selected_projects = projects[start-1:end]
+        print(f"构建项目范围: {start} 到 {end}, 共 {len(selected_projects)} 个项目")
+        asyncio.run(build_all(selected_projects))
     else:
         print("构建所有项目")
         asyncio.run(build_all(projects))

@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  cpp_build_cc:
+    build:
+      context: .
+      dockerfile: dockerfile_cppbuild_cc
+    image: cppbuild_cc:latest
+    container_name: cc
+    hostname: wnk
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    working_dir: /home/wnk/cc_projects
+    environment:
+      - TZ=Asia/Shanghai
+      - CUDA_HOME=/usr/local/cuda      
+    volumes:
+      # 挂载项目代码库
+      - /media/wnk/cc_projects:/home/wnk/cc_projects:rw
+      - /home/wnk/.claude/:/home/wnk/.claude/
+      - /home/wnk/.ssh/:/home/wnk/.ssh/
+      - ./cc_sdk/:/home/wnk/cc_sdk/:rw
+      # Filesystem MCP Server 工作目录
+      - ./workspace:/app/workspace:rw
+      - ./logs:/app/filesystem-mcp-server/logs:rw
+      # 挂载CUDA目录
+      - /usr/local/cuda-12.1:/usr/local/cuda      
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: '20'
+          memory: 16G
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
