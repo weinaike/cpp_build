@@ -1,0 +1,1 @@
+Multiple `Makefile` instances were found. It seems essential to understand the primary build process. Could you clarify which specific source module or path needs compilation, or should I focus on the main build directory?

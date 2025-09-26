@@ -1,0 +1,1 @@
+The source-based build guide has been created and saved as `BUILD_GUIDE_LINUX.md` in the current project directory. It includes detailed build instructions tailored for this Linux system. Let me know if you want any modifications or if I should begin with the next step.

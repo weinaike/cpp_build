@@ -1,0 +1,1 @@
+I’ve completed a detailed source-based build guide for OpenH264 on your Linux system. The next step involves installing necessary dependency libraries before proceeding with the compilation. Shall we continue?

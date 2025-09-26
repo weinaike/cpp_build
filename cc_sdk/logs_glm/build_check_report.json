@@ -1,0 +1,1813 @@
+{
+  "generated_at": "2025-09-26T02:39:05.846192",
+  "total_projects": 100,
+  "successful_count": 80,
+  "failed_count": 20,
+  "success_rate": 80.0,
+  "results": [
+    {
+      "project_name": "8cc",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "8cc 项目构建成功，所有测试通过，编译器功能正常。",
+      "details": "根据文档内容，8cc 项目编译过程已成功完成，生成了可执行文件 `/home/wnk/cc_projects/8cc/8cc`。所有 37 个核心测试用例均通过，工具和语法测试也成功完成。构建过程中遇到的 PIE 链接问题已通过添加 `-no-pie` 标志解决，未发现未解决的依赖问题或致命错误。编译器功能验证成功，能够正常编译 C 代码。",
+      "issues": [],
+      "success_indicators": [
+        "编译器已成功构建 (8cc, 337,336 bytes)",
+        "所有核心测试通过 (37/37 tests passed)",
+        "工具测试通过",
+        "语法测试通过",
+        "PIE 链接问题已解决",
+        "生成了可执行文件 `/home/wnk/cc_projects/8cc/8cc`",
+        "编译器功能验证成功"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/8cc_build_guide.md"
+    },
+    {
+      "project_name": "arangodb",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建未能生成完整的可执行文件，V8引擎编译失败导致关键功能缺失。",
+      "details": "尽管文档中提到成功构建了多个核心库组件（如VelocyPack、RocksDB、Faiss等），并解决了多个现代C++兼容性问题，但由于V8 JavaScript引擎的编译失败，导致无法生成完整的arangod服务器和客户端工具。这是ArangoDB的关键功能组件，缺失该部分意味着构建不完整。此外，文档中未提及任何测试用例的运行结果，进一步降低了构建成功的信心。",
+      "issues": [
+        "V8 JavaScript引擎编译失败，导致无法构建完整的arangod服务器和客户端工具。",
+        "未生成完整的可执行文件。",
+        "文档中未提及测试用例的运行结果。",
+        "构建进度仅完成约70%，未达到完整构建状态。"
+      ],
+      "success_indicators": [
+        "成功配置了Ubuntu 22.04 LTS + Clang 22.0.0git编译环境。",
+        "完成了CMake配置并解决了多个现代C++兼容性问题。",
+        "成功构建了多个核心库组件（如VelocyPack、RocksDB、Faiss等）。",
+        "验证了构建环境的可行性，Clang+LLVM工具链工作正常。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/arangodb_build_guide.md"
+    },
+    {
+      "project_name": "aseprite",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建未成功，主要由于Skia依赖库下载失败导致编译未完成。",
+      "details": "根据文档内容，Aseprite项目的构建指南已经编写完成，依赖库安装也已完成，但由于网络问题导致Skia依赖库无法下载，编译过程未能完成，因此未生成可执行文件或库文件。此外，测试用例未运行，核心功能未验证。",
+      "issues": [
+        "Skia依赖库下载失败，导致编译未完成",
+        "未生成可执行文件或库文件",
+        "测试用例未运行",
+        "核心功能未验证"
+      ],
+      "success_indicators": [
+        "项目结构和构建配置文件已分析",
+        "构建依赖和系统要求已确定",
+        "Linux编译构建指南已编写",
+        "构建依赖库已安装"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/aseprite_build_guide.md"
+    },
+    {
+      "project_name": "aubio",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "aubio 项目构建成功，所有测试通过，生成了完整的库文件、工具和文档。",
+      "details": "根据文档内容，aubio 项目的构建过程完全成功。所有依赖均已正确安装，源码编译完成，52/52 测试用例通过，生成了共享库、静态库、Python 模块和命令行工具。文档和开发文件也已正确安装到系统目录，核心功能正常工作。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已正确安装",
+        "源码编译完成，无编译错误",
+        "52/52 测试用例通过",
+        "生成了共享库和静态库",
+        "Python 模块已安装到 site-packages",
+        "命令行工具工作正常",
+        "API 文档已生成并安装",
+        "支持多种音频处理功能"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/aubio_build_guide.md"
+    },
+    {
+      "project_name": "audioFlux",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "audioFlux 项目在 Ubuntu 22.04 上构建成功，所有核心功能正常工作。",
+      "details": "根据文档内容，audioFlux 项目在 Ubuntu 22.04 系统上完成了所有构建步骤，包括依赖安装、源码编译、Python 包构建和功能验证。生成了核心库文件 `libaudioflux.so`，并成功安装了 Python 包，能够正常导入和使用。尽管构建过程中存在一些 CMake 系统警告，但这些警告未对最终功能造成影响。",
+      "issues": [
+        "构建过程中存在一些 CMake 系统警告，但未影响功能"
+      ],
+      "success_indicators": [
+        "成功安装了所有依赖",
+        "成功编译了 C/C++ 源码并生成了 `libaudioflux.so`",
+        "成功构建并安装了 Python 包",
+        "功能验证通过，音频处理功能正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/audioFlux_build_guide.md"
+    },
+    {
+      "project_name": "binutils-gdb",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "binutils-gdb 项目构建成功，所有工具已生成并通过功能测试。",
+      "details": "根据文档内容，binutils-gdb 项目构建过程顺利完成，所有依赖已安装，编译过程无中断或错误，生成了主要工具（如链接器、汇编器等），并通过了功能测试。验证脚本确认了工具的可执行性和版本信息，且测试了核心功能（如反汇编、ELF分析等）。未发现未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已正确安装",
+        "编译过程顺利完成，无中断或错误",
+        "生成了主要工具（链接器、汇编器等）",
+        "工具通过了功能测试，验证了可执行性和版本信息",
+        "测试了核心功能（反汇编、ELF分析等）并正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/binutils-gdb_build_guide.md"
+    },
+    {
+      "project_name": "blender",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Blender 项目构建成功，所有测试通过，核心功能正常运行。",
+      "details": "根据文档内容，Blender 5.0.0 Alpha 版本在 Ubuntu 22.04 LTS 平台上成功构建。构建过程完成了所有必要步骤，包括依赖安装、编译和功能验证。生成了可执行文件和完整安装包，所有测试用例通过，未报告任何未解决的问题或运行时错误。",
+      "issues": [],
+      "success_indicators": [
+        "成功编译 Blender 5.0.0 Alpha 版本",
+        "生成了可执行文件 `/home/wnk/cc_projects/build_linux/bin/blender`",
+        "所有测试用例通过，包括版本命令、Python API 和依赖库链接验证",
+        "无运行时错误",
+        "核心功能和 Python API 功能正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/blender_build_guide.md"
+    },
+    {
+      "project_name": "caffe",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Caffe 项目在 Ubuntu 22.04 上的构建成功，所有核心功能正常工作。",
+      "details": "根据文档内容，Caffe 项目已成功完成源码编译，生成了核心库、工具集和 Python 接口，并通过了所有测试验证。构建过程中解决了依赖兼容性问题，且未报告任何未解决的错误或问题。所有核心功能（如模型加载、层操作、内存管理等）均正常运行，性能表现符合预期。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有依赖库和开发工具",
+        "正确配置了构建环境（Makefile.config）",
+        "成功编译了核心库、工具集和 Python 接口",
+        "生成了动态库（libcaffe.so.1.0.0）和静态库（libcaffe.a）",
+        "所有单元测试通过",
+        "命令行工具正常运行",
+        "成功加载并初始化 AlexNet 模型",
+        "运行了性能基准测试，结果符合预期",
+        "解决了 OpenCV 4 兼容性问题",
+        "解决了 HDF5 库路径问题",
+        "解决了 Boost Python 和 Python 3 支持问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/caffe_build_guide.md"
+    },
+    {
+      "project_name": "civetweb",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "CivetWeb 项目构建成功，所有功能正常，测试通过。",
+      "details": "根据文档内容，CivetWeb 项目在 Ubuntu 22.04 LTS 上成功完成了构建。生成了主可执行文件和静态库文件，所有功能特性均被验证正常工作。测试结果显示可执行文件运行正常，依赖库完整，所有编译选项均正常工作。文档中未提到任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "生成了主可执行文件 civetweb 和静态库文件 libcivetweb.a",
+        "所有功能特性（如 Lua 支持、SQLite3 支持、HTTP/2 支持等）均正常工作",
+        "测试验证通过，可执行文件运行正常，显示版本信息和帮助",
+        "依赖库完整，无缺失",
+        "所有编译选项正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/civetweb_build_guide.md"
+    },
+    {
+      "project_name": "clang",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Clang 项目构建成功，所有核心功能和测试均通过验证。",
+      "details": "根据文档内容，Clang 项目在 Ubuntu 22.04.4 LTS 系统上成功完成了构建和验证。所有基础编译测试、工具链功能、性能特性和功能特性均通过，生成的可执行文件和工具链工作正常。虽然 AddressSanitizer 运行时库缺失，但文档明确指出这不影响基础功能，因此可以忽略。",
+      "issues": [
+        "AddressSanitizer 运行时库缺失（不影响基础功能）"
+      ],
+      "success_indicators": [
+        "基础编译测试通过（C 和 C++17 程序编译和运行成功）",
+        "生成的汇编代码正确",
+        "完整的 Clang 工具链已安装并验证（clang, clang++, clang-format 等）",
+        "支持现代 C++ 标准（C++17）",
+        "支持性能优化（O3 优化级别和 -march=native）",
+        "目标平台支持（x86_64-unknown-linux-gnu）",
+        "CUDA 支持（v12.1）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/clang_build_guide.md"
+    },
+    {
+      "project_name": "cocos2d-x",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "Cocos2d-x 引擎库成功编译，但部分测试项目因链接错误未能完成，构建存在问题。",
+      "details": "根据文档内容，Cocos2d-x 引擎库和相关依赖库已成功编译，生成了主要的静态库文件（如 libcocos2d.a 和 libluacocos2d.a）。然而，cpp-tests、lua-tests 和 lua-empty-test 等测试项目未能成功编译，主要原因是 Chipmunk 物理引擎和 FMOD 音频库的链接问题。此外，未提及是否对核心功能进行了验证，因此无法确认引擎的完整功能是否正常工作。",
+      "issues": [
+        "cpp-tests、lua-tests 和 lua-empty-test 未能成功编译。",
+        "Chipmunk 物理引擎存在链接问题。",
+        "FMOD 音频库存在链接问题。",
+        "未验证核心功能是否正常工作。"
+      ],
+      "success_indicators": [
+        "Cocos2d-x 引擎库（libcocos2d.a）成功编译。",
+        "Lua 绑定库（libluacocos2d.a）成功编译。",
+        "所有外部依赖库成功编译。",
+        "资源文件已复制到测试项目。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/cocos2d-x_build_guide.md"
+    },
+    {
+      "project_name": "codeblocks",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Code::Blocks IDE 项目构建成功，生成了可执行文件和库文件，所有核心功能正常。",
+      "details": "根据文档内容，Code::Blocks IDE v25.03 的构建过程完整且成功。所有依赖库已正确安装，源码编译完成，生成了可执行文件 `/usr/local/bin/codeblocks` 和主库文件 `/usr/local/lib/libcodeblocks.so`。此外，所有核心插件和贡献插件均已成功编译。虽然构建过程中存在 TinyXML 相关的链接警告，但文档明确指出这些警告不会影响程序功能，表明构建的完整性和功能性未受影响。",
+      "issues": [
+        "构建过程中存在 TinyXML 相关的链接警告，但未影响程序功能"
+      ],
+      "success_indicators": [
+        "成功安装所有依赖库和工具",
+        "源码编译完整无中断",
+        "生成了可执行文件 `/usr/local/bin/codeblocks`",
+        "生成了主库文件 `/usr/local/lib/libcodeblocks.so`",
+        "所有核心插件和贡献插件成功编译",
+        "文档明确指出程序功能正常"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/codeblocks_build_guide.md"
+    },
+    {
+      "project_name": "codelite",
+      "is_successful": false,
+      "confidence_score": 0.8,
+      "summary": "构建过程完成了核心组件的编译，但存在未解决的兼容性问题，且未明确提及测试结果和完整功能验证。",
+      "details": "文档表明 CodeLite 项目的核心组件已成功编译，包括生成了核心库 `libcodelite.so` 和其他必要工具。然而，文档中提到的 wxWidgets 版本不匹配问题（系统版本为 3.0.5，而项目要求 3.1.6+）仅通过临时修改和兼容性修复解决，未完全满足项目需求。此外，文档未提及测试用例的执行情况，也未明确说明是否生成了完整的可执行文件或是否验证了核心功能的正常运行。因此，尽管构建过程取得了一定进展，但仍存在未解决的兼容性问题，且缺乏测试和功能验证的支持，无法确认构建是否完全成功。",
+      "issues": [
+        "wxWidgets 版本不匹配（3.0.5 与要求的 3.1.6+）",
+        "未明确提及测试用例的执行情况",
+        "未说明是否生成完整的可执行文件",
+        "未验证核心功能是否正常运行"
+      ],
+      "success_indicators": [
+        "成功安装了所有依赖库",
+        "完成了核心组件的编译",
+        "解决了部分兼容性问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/codelite_build_guide.md"
+    },
+    {
+      "project_name": "codon",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建过程部分完成，但存在未解决的链接问题，测试结果未明确，构建完整性存疑。",
+      "details": "文档显示构建过程已经完成了大部分步骤，包括安装依赖、配置CMake环境、编译大部分依赖库以及生成标准库和运行时库。然而，文档明确提到仍然存在一些链接问题需要解决，且未提供测试结果的具体信息。此外，虽然提到生成了可执行文件和库文件，但未明确说明这些文件是否通过了验证。",
+      "issues": [
+        "存在未解决的链接问题（例如OpenMP库链接问题）。",
+        "未明确说明测试结果是否通过。",
+        "构建完整性存疑，未确认所有关键组件是否成功构建。",
+        "文档未提供运行时验证核心功能的结果。"
+      ],
+      "success_indicators": [
+        "安装了所有系统依赖。",
+        "配置了CMake构建环境。",
+        "编译了大部分依赖库（包括OpenBLAS、RE2、Highway等）。",
+        "生成了标准库和运行时库。",
+        "生成了可执行文件和库文件。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/codon_build_guide.md"
+    },
+    {
+      "project_name": "color_coded",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "color_coded 项目构建成功，主库已生成并正确链接所有依赖。",
+      "details": "根据文档内容，color_coded 项目成功完成了编译构建，生成了共享库文件 `color_coded.so`，并正确链接了所有必需的依赖库（如 LLVM 15、Clang 15 和 Lua 5.3）。构建过程中的所有步骤，包括系统分析、依赖安装、源码编译和验证测试均已完成。文档明确指出项目已准备好在支持 Lua 的 vim 中使用，提供语义语法高亮功能。虽然提到测试程序链接失败，但文档说明这不影响主要功能，因此可以认为构建成功。",
+      "issues": [
+        "测试程序链接失败（文档说明不影响主要功能）"
+      ],
+      "success_indicators": [
+        "主库 `color_coded.so` 成功生成",
+        "正确链接所有依赖库（LLVM 15、Clang 15、Lua 5.3）",
+        "构建过程的所有步骤均成功完成",
+        "文档明确指出项目已准备好使用"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/color_coded_build_guide.md"
+    },
+    {
+      "project_name": "cpprestsdk",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "C++ REST SDK 项目构建成功，所有核心功能均已验证通过。",
+      "details": "根据文档内容，项目使用 CMake 构建系统，所有依赖均已安装，编译过程顺利完成，生成了主库文件、测试库和示例程序。功能测试和示例程序运行正常，验证了 HTTP 客户端、URI 构建、JSON 解析等核心功能。未提及任何未解决的致命错误或依赖问题。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有依赖：Boost、OpenSSL、zlib、websocketpp",
+        "成功生成主库文件：libcpprest.so.2.10",
+        "成功生成 12 个测试库和 5 个示例程序",
+        "功能测试程序验证通过：HTTP 客户端、URI 构建、JSON 解析",
+        "示例程序（SearchFile）运行正常",
+        "未提及任何编译或运行时的致命错误"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/cpprestsdk_build_guide.md"
+    },
+    {
+      "project_name": "cquery",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "cquery 项目构建成功，生成了可执行文件并通过了功能测试。",
+      "details": "根据文档内容，cquery 项目使用 CMake 构建系统，成功完成了依赖安装、源码编译和功能验证。编译过程中修复了头文件缺失问题，生成了可执行文件 `build/cquery`，并通过了基本功能测试（如 `--check` 功能）。所有依赖库正确链接，构建过程无未解决的错误或依赖问题。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有必要依赖库",
+        "修复了编译过程中头文件缺失问题",
+        "生成了可执行文件 `build/cquery`",
+        "可执行文件大小为 3.8MB",
+        "正确链接了 libclang 和其他依赖库",
+        "通过了基本功能测试（如 `--check` 功能）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/cquery_build_guide.md"
+    },
+    {
+      "project_name": "crow",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "构建成功，所有依赖安装、编译、测试和功能验证均完成。",
+      "details": "根据文档内容，Crow 项目构建过程顺利完成。所有依赖项已正确安装，源代码成功编译，所有测试用例通过，且核心功能（如 HTTP 服务）已验证正常运行。此外，生成了多个示例可执行文件、测试可执行文件以及单头文件分发版本。未发现未解决的依赖问题或致命错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖项（build-essential, cmake, boost, tcmalloc）已安装",
+        "Boost.Asio API 兼容性问题已解决",
+        "所有源代码成功编译，仅有轻微警告",
+        "所有测试用例（crow_test 和 template_test）通过",
+        "helloworld 示例运行并成功提供 HTTP 服务",
+        "生成了单头文件 crow_all.h 用于分发",
+        "生成了多个示例和测试可执行文件"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/crow_build_guide.md"
+    },
+    {
+      "project_name": "DearPyGui",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "DearPyGui 项目在 Ubuntu 22.04 上构建成功，所有功能验证通过。",
+      "details": "根据文档内容，DearPyGui 项目在 Ubuntu 22.04 系统上成功完成了源码编译。构建过程包括依赖安装、CMake 配置和并行编译，生成了共享库 `_dearpygui.so`。验证显示 Python 扩展模块可以正常导入，1158 个 API 函数可用，所有功能均正常工作。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有依赖库",
+        "CMake 构建环境配置成功",
+        "并行编译完成，无中断或错误",
+        "生成了共享库 `_dearpygui.so`",
+        "Python 扩展模块正常导入",
+        "测试验证通过，1158 个 API 函数可用",
+        "构建总结明确表示构建过程完全成功"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/DearPyGui_build_guide.md"
+    },
+    {
+      "project_name": "DOOM",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "DOOM 项目未能成功构建，主要由于链接问题和初始化问题，未生成可执行文件。",
+      "details": "尽管所有源码文件成功编译为目标文件，并解决了一些头文件包含问题，但最终链接阶段失败，未能生成可执行文件。此外，存在与64位系统兼容性相关的问题，以及字符串指针初始化问题。这些问题阻碍了项目的完整构建。",
+      "issues": [
+        "链接阶段失败，主要是 TLS(线程本地存储)问题",
+        "64位系统兼容性问题",
+        "字符串指针初始化问题",
+        "未生成最终的可执行文件"
+      ],
+      "success_indicators": [
+        "所有源码文件成功编译为目标文件",
+        "修复了头文件包含问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/DOOM_build_guide.md"
+    },
+    {
+      "project_name": "drogon",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Drogon 项目构建成功，所有组件正常工作，生成了核心库和工具。",
+      "details": "根据文档内容，Drogon 项目使用 CMake 构建系统，依赖库已正确安装，源码成功编译，生成了核心库（libdrogon.a）、工具（drogon_ctl）以及多个示例程序。验证结果显示 drogon_ctl 工具功能正常，示例程序运行无异常，依赖库链接正确，未提到任何未解决的问题或测试失败。",
+      "issues": [],
+      "success_indicators": [
+        "CMake 配置和编译完成",
+        "生成了核心库 libdrogon.a",
+        "生成了工具 drogon_ctl",
+        "生成了 12 个示例程序",
+        "验证结果显示 drogon_ctl 工具功能正常",
+        "依赖库链接正确",
+        "支持多种数据库和功能（PostgreSQL、SQLite、Redis 等）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/drogon_build_guide.md"
+    },
+    {
+      "project_name": "duckdb",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "DuckDB 项目构建成功，所有测试通过，生成了完整的构建产物。",
+      "details": "根据文档内容，DuckDB 项目在 Ubuntu 22.04 LTS 系统上成功完成了构建。所有依赖库已安装，源码编译完成，生成了可执行文件和库文件。测试用例涵盖了基本功能和扩展功能，均通过验证，未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "成功编译 DuckDB 源码",
+        "生成了主可执行文件 `build/release/duckdb`",
+        "生成了静态库 `build/release/src/libduckdb_static.a`",
+        "生成了共享库 `build/release/src/libduckdb.so`",
+        "所有测试用例通过，包括 SQL 查询、表操作、扩展加载等",
+        "构建产物完整且位于指定目录"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/duckdb_build_guide.md"
+    },
+    {
+      "project_name": "elements",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Elements 项目构建成功，所有依赖已安装，库和示例程序均成功编译。",
+      "details": "根据文档内容，Elements 项目使用 CMake 和 C++20 完成了构建，所有依赖（Cairo、GTK3、OpenGL 等）已正确安装并链接。成功生成了静态库 `libelements.a` 和 31 个示例程序的可执行文件。构建类型为 Release，优化完成。虽然提到 GTK 显示警告，但明确说明这是由于环境无图形界面引起的，属于非致命问题。",
+      "issues": [
+        "GTK 显示警告（非致命问题）"
+      ],
+      "success_indicators": [
+        "成功生成静态库 `libelements.a`",
+        "成功生成 31 个示例程序的可执行文件",
+        "所有依赖已正确安装并验证",
+        "构建类型为 Release，优化完成",
+        "构建文件完整且依赖正确链接"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/elements_build_guide.md"
+    },
+    {
+      "project_name": "emacs-gdb",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Emacs GDB 项目构建成功，所有步骤均已完成，测试通过，构建产物完整。",
+      "details": "根据文档内容，构建过程顺利完成，所有依赖已安装，编译成功生成了动态模块 (gdb-module.so) 和测试程序 (testbed.out)。测试验证表明程序运行正常，Emacs Lisp 文件可以成功加载，且构建报告已生成。未提及任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有必需依赖已安装",
+        "成功编译生成了 gdb-module.so 和 testbed.out",
+        "测试程序运行正常",
+        "Emacs Lisp 文件加载成功",
+        "构建报告已生成"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/emacs-gdb_build_guide.md"
+    },
+    {
+      "project_name": "entt",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "EnTT 项目构建成功，所有测试通过，核心功能正常运行。",
+      "details": "根据文档内容，EnTT 项目构建过程顺利完成，所有依赖成功安装，CMake 配置完成，源码编译成功，所有 68 个测试用例全部通过，且核心功能验证正常运行。生成了测试可执行文件和库文件，构建状态完全可用。",
+      "issues": [],
+      "success_indicators": [
+        "依赖安装成功",
+        "CMake 配置完成",
+        "源码编译成功",
+        "所有测试用例通过 (100% 通过率)",
+        "生成了测试可执行文件和库文件",
+        "核心功能验证正常运行",
+        "构建状态完全可用"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/entt_build_guide.md"
+    },
+    {
+      "project_name": "facil.io",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "facil.io 项目构建成功，所有测试通过，核心功能正常工作。",
+      "details": "根据文档内容，facil.io 项目在 Linux 系统上成功完成了静态库和共享库的构建，生成了相关的库文件，并通过了所有测试验证。构建过程支持多种工具（GNU make 和 CMake），并且测试程序验证了库的正确性和功能性。系统依赖（如 epoll、sendfile 和 OpenSSL）均已满足，构建产物完整且功能正常。",
+      "issues": [],
+      "success_indicators": [
+        "静态库成功生成：build/libfacil.io.a",
+        "共享库成功生成：tmp/libfacil.so",
+        "测试程序 test_facil 成功运行",
+        "支持 epoll、sendfile 和 OpenSSL",
+        "库集成测试成功",
+        "构建工具（GNU make 和 CMake）均成功完成构建"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/facil.io_build_guide.md"
+    },
+    {
+      "project_name": "FFmpeg",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "FFmpeg项目构建成功，所有功能正常运行。",
+      "details": "根据文档内容，FFmpeg项目的构建过程完整且成功。所有依赖库已正确安装，编译过程顺利完成，生成了可执行文件和库文件。功能测试表明核心功能正常运行，支持多种编解码器和硬件加速功能。安装位置明确，符号链接已创建，确保了可执行文件的可用性。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库成功安装",
+        "编译过程完成，无中断或错误",
+        "生成了可执行文件和库文件",
+        "功能测试通过，成功创建测试视频并进行转码",
+        "支持多种编解码器和硬件加速功能",
+        "安装位置明确，可执行文件和库文件可用"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/FFmpeg_build_guide.md"
+    },
+    {
+      "project_name": "flameshot",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Flameshot 项目构建成功，所有核心功能正常，未发现任何问题。",
+      "details": "根据文档内容，Flameshot 项目使用 CMake 和 Qt6 构建系统，成功完成了依赖安装、源码编译和功能验证。生成了功能完整的可执行文件，所有动态库依赖正确链接，核心功能和国际化支持均正常。构建过程无中断或错误，且优化测试表明构建质量良好。",
+      "issues": [],
+      "success_indicators": [
+        "依赖库安装完成，所有必需依赖已正确安装",
+        "CMake 配置成功，生成了构建文件",
+        "多线程编译完成，生成了功能完整的可执行文件",
+        "核心功能验证正常，包括命令行参数、帮助信息和版本查询",
+        "所有动态库依赖正确链接",
+        "支持国际化，包含 30+ 语言翻译文件",
+        "支持 PIE 安全特性，生成地址无关可执行文件",
+        "优化测试通过，strip 后文件大小显著减少"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/flameshot_build_guide.md"
+    },
+    {
+      "project_name": "foundationdb",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "FoundationDB项目的构建未完全成功，部分核心库文件已编译，但未生成完整的可执行文件或完成所有组件的构建。",
+      "details": "文档显示构建过程完成了部分核心库文件的编译（如libfdbrpc.a和libfdbclient.a），并成功配置了CMake构建系统。然而，构建未能完成所有组件的编译（如fdbbackup_actors），且未提及生成可执行文件。此外，文档中未提到测试用例的执行情况，且存在OpenSSL 3.0弃用API的警告问题。虽然构建指南和环境配置较为完善，但由于时间限制，构建未完全完成，无法确认核心功能是否正常工作。",
+      "issues": [
+        "未完成所有组件的编译（如fdbbackup_actors）",
+        "未生成完整的可执行文件",
+        "未提及测试用例的执行情况",
+        "存在OpenSSL 3.0弃用API的警告",
+        "构建时间过长，未能完成完整编译"
+      ],
+      "success_indicators": [
+        "成功配置了CMake构建系统",
+        "成功编译了部分核心库文件（如libfdbrpc.a, libfdbclient.a）",
+        "解决了部分构建问题（如通过禁用Swift支持避免编译器依赖问题）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/foundationdb_build_guide.md"
+    },
+    {
+      "project_name": "gameplay",
+      "is_successful": false,
+      "confidence_score": 0.8,
+      "summary": "GamePlay项目的核心库成功编译，但示例程序未能完全构建，存在链接器问题。",
+      "details": "根据文档内容，GamePlay项目的核心库（libgameplay.a）已成功编译，说明主要功能模块的构建是成功的。然而，示例程序未能完全构建成功，原因是依赖库与现代Ubuntu系统的PIE机制存在兼容性问题。此外，文档中未提及测试用例的执行情况，因此无法确认核心功能是否经过验证。尽管构建指南详细且依赖项已安装，但示例程序的构建失败表明项目的完整性存在问题。",
+      "issues": [
+        "示例程序未能成功构建，存在PIE链接器兼容性问题。",
+        "未提及测试用例的执行情况，无法确认核心功能是否正常工作。",
+        "构建结果中未生成可执行文件，仅生成了静态库。"
+      ],
+      "success_indicators": [
+        "核心库libgameplay.a成功编译。",
+        "修复了CMake版本兼容性问题。",
+        "依赖项已通过install.sh成功下载。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/gameplay_build_guide.md"
+    },
+    {
+      "project_name": "gcc",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "GCC项目的构建指南文档显示了编译过程的部分成功，但未明确生成可执行文件，且存在权限问题。",
+      "details": "文档描述了从源码编译GCC的详细过程，包括依赖安装、配置选项和编译步骤。然而，文档未明确提到是否成功生成了GCC的可执行文件或库文件。此外，文档提到编译过程中遇到了权限问题，虽然声称不影响GCC本身的编译能力，但未提供足够的证据证明关键组件已成功构建。测试部分仅验证了系统现有的GCC编译器，而非新编译的GCC版本，这进一步降低了构建成功的可信度。",
+      "issues": [
+        "未明确提到是否成功生成GCC的可执行文件或库文件",
+        "编译过程中遇到权限问题，可能影响构建完整性",
+        "测试验证使用的是系统现有的GCC，而非新编译的GCC版本",
+        "未提供新编译的GCC核心功能测试结果"
+      ],
+      "success_indicators": [
+        "成功安装了所有编译依赖",
+        "完成了GCC编译配置",
+        "编译过程启动并进行了大量组件构建",
+        "验证了系统现有的GCC编译器能够正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/gcc_build_guide.md"
+    },
+    {
+      "project_name": "geany",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Geany 项目构建成功，所有核心功能和插件均正常工作。",
+      "details": "根据文档内容，Geany 项目使用 Meson 构建系统完成了源码编译，生成了主可执行文件、共享库、静态库、插件和文档等构建产物。文档明确指出构建状态完全成功，且生成的 Geany IDE 已完全可用，包含所有核心功能和插件支持。未提及测试用例的具体运行情况，但从文档描述来看，构建过程完整且无未解决问题。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有必要的依赖库",
+        "完整配置了构建环境",
+        "成功编译了源代码",
+        "生成了主可执行文件 (build/geany)",
+        "生成了共享库 (libgeany.so.0)",
+        "生成了静态库 (Scintilla, Lexilla, Ctags, TagManager)",
+        "生成了 10 个插件",
+        "生成了 HTML 文档和 43 种语言翻译",
+        "文档明确指出构建状态完全成功",
+        "Geany IDE 核心功能和插件均正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/geany_build_guide.md"
+    },
+    {
+      "project_name": "godot",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Godot 项目构建成功，生成了可执行文件并通过了所有验证测试。",
+      "details": "根据文档内容，Godot 项目成功完成了从源码编译的全过程，生成了可执行文件 `bin/godot.linuxbsd.editor.x86_64`，并通过了所有验证测试，包括可执行文件格式、动态链接、版本信息、帮助信息和功能选项的检查。构建环境和依赖安装步骤清晰，未报告任何错误或问题。",
+      "issues": [],
+      "success_indicators": [
+        "成功完成从源码编译",
+        "生成了可执行文件 `bin/godot.linuxbsd.editor.x86_64`",
+        "可执行文件格式正确",
+        "动态链接正常",
+        "版本信息和帮助信息显示正常",
+        "所有功能选项可用",
+        "构建环境和依赖安装无问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/godot_build_guide.md"
+    },
+    {
+      "project_name": "gpt4all",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "GPT4All 项目构建成功，核心功能正常工作，Python 绑定验证通过。",
+      "details": "根据文档内容，GPT4All 项目的构建过程在 Linux 系统上成功完成。所有必要的依赖项已安装，核心后端库和 Python 绑定均已成功编译和验证。生成的库文件和 Python 包功能正常，支持本地 LLM 推理。虽然 Qt 6.8 的限制导致聊天应用程序在 Ubuntu 22.04 上不可用，但这并不影响核心功能的实现。",
+      "issues": [
+        "Qt 6.8 的依赖限制了聊天应用程序在 Ubuntu 22.04 上的可用性"
+      ],
+      "success_indicators": [
+        "所有必要的依赖项已成功安装",
+        "核心后端库成功编译，生成了 `libllmodel.so.0.5.0` 等关键文件",
+        "Python 绑定成功安装并验证，支持完整的 GPT4All 功能",
+        "构建过程无中断或错误",
+        "文档中明确说明所有构建工件均已验证且功能正常"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/gpt4all_build_guide.md"
+    },
+    {
+      "project_name": "guetzli",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "构建成功，生成了可执行文件和静态库，所有测试通过，功能正常。",
+      "details": "根据文档内容，Guetzli 项目构建过程完全成功。生成了可执行文件和静态库，二进制文件格式正确，功能测试通过，压缩效果显著。文档中未提及任何未解决的问题，构建完整性高。",
+      "issues": [],
+      "success_indicators": [
+        "生成了可执行文件：`bin/Release/guetzli`",
+        "生成了静态库：`bin/Release/libguetzli_static.a`",
+        "二进制文件格式正确：ELF 64-bit LSB executable, x86-64",
+        "功能测试通过：成功将 PNG 压缩为 JPEG",
+        "压缩效果显著：压缩率约 89%",
+        "提供了完整的构建指南"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/guetzli_build_guide.md"
+    },
+    {
+      "project_name": "irony-mode",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Irony-Mode 项目构建成功，所有测试通过，生成了可执行文件。",
+      "details": "根据文档内容，Irony-Mode 项目在 Ubuntu 22.04 LTS 系统上成功完成了构建。构建过程中解决了 LLVM 版本冲突问题，使用 Clang 14 成功编译并生成了 `irony-server` 可执行文件。所有测试用例（3/3）均通过，验证了动态链接依赖和核心功能的正常运行。构建产物已安装并准备好在 Emacs 中使用。",
+      "issues": [],
+      "success_indicators": [
+        "成功生成了 `irony-server` 可执行文件",
+        "所有测试用例通过 (3/3 tests passed)",
+        "动态链接依赖验证正确",
+        "核心功能测试正常",
+        "构建过程无未解决问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/irony-mode_build_guide.md"
+    },
+    {
+      "project_name": "jucipp",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "juCi++ 项目构建成功，生成了可执行文件，所有依赖已解决，构建过程无致命错误。",
+      "details": "根据文档内容，juCi++ 项目使用 CMake 和 make 成功完成了构建，生成了 64 位可执行文件。所有依赖库已正确安装，动态链接正常，构建过程中无错误，仅有一些警告信息。文档中未提及测试用例的运行情况，但核心功能已验证可运行。",
+      "issues": [
+        "构建过程中存在一些警告信息（未具体说明）。",
+        "未明确提及是否运行了测试用例或测试结果。"
+      ],
+      "success_indicators": [
+        "所有依赖库已成功安装。",
+        "CMake 配置成功，绕过了版本兼容性问题。",
+        "make 编译成功，生成了 4.5MB 的可执行文件。",
+        "可执行文件动态链接正常，所有依赖库正确加载。",
+        "程序已验证可以运行。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/jucipp_build_guide.md"
+    },
+    {
+      "project_name": "kvrocks",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Kvrocks 项目构建成功，所有功能验证通过，生成了可执行文件并正常运行。",
+      "details": "根据文档内容，Kvrocks 项目构建过程完整且成功。文档详细描述了从环境检查、依赖安装到源码编译的每一步，所有步骤均顺利完成。编译生成了两个主要的可执行文件（kvrocks 和 kvrocks2redis），并通过了基本功能测试，包括服务启动、Redis 协议兼容性测试以及核心操作（SET/GET）的验证。没有提到任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "系统环境满足所有编译要求",
+        "所有依赖库成功安装",
+        "源码编译完成，生成了可执行文件 kvrocks 和 kvrocks2redis",
+        "编译产物通过了版本信息验证和依赖库链接检查",
+        "服务成功启动并通过了基本功能测试",
+        "Redis 协议兼容性测试通过",
+        "核心功能（SET/GET 操作）正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/kvrocks_build_guide.md"
+    },
+    {
+      "project_name": "leveldb",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "LevelDB 项目构建成功，所有测试通过，功能正常。",
+      "details": "根据文档内容，LevelDB 项目在 Ubuntu 22.04 系统上成功完成了源码编译和构建。所有依赖库已正确安装，源码编译完成后生成了静态库和工具程序。测试套件的所有测试用例均通过，性能测试结果正常，功能测试成功，未报告任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "系统环境正确配置：Ubuntu 22.04 LTS，GCC 11.4.0，CMake 4.1.1",
+        "所有依赖库已安装：build-essential、cmake、git、libsnappy-dev、libzstd-dev",
+        "源码编译完成，修复了 C++11 兼容性问题",
+        "生成了静态库：libleveldb.a",
+        "生成了工具程序：leveldbutil、db_bench、leveldb_tests",
+        "测试套件的 3 个测试用例全部通过",
+        "性能测试结果正常：fillseq 达到 26.2 MB/s",
+        "功能测试成功，未报告任何问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/leveldb_build_guide.md"
+    },
+    {
+      "project_name": "libde265",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libde265 项目构建成功，所有组件正常工作。",
+      "details": "根据文档内容，libde265 项目构建过程顺利完成，生成了共享库、静态库、头文件和可执行程序。所有验证测试均通过，程序运行正常，依赖关系完整，且包含调试信息。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "共享库和静态库成功生成",
+        "头文件正确安装",
+        "可执行程序 dec265 和 sherlock265 正常运行",
+        "所有验证测试通过",
+        "依赖关系完整",
+        "程序包含调试信息"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libde265_build_guide.md"
+    },
+    {
+      "project_name": "libfacedetection",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libfacedetection 项目构建成功，所有功能验证通过，库文件和示例程序已正确生成。",
+      "details": "根据文档内容，libfacedetection 项目已成功编译并安装。生成了共享库文件 `libfacedetection.so` 和多个示例程序（如 `detect-image-demo`）。头文件和 CMake 配置文件已正确安装到系统路径。功能验证显示库文件能够成功加载，基本功能测试通过，且系统集成完成。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "库文件 `libfacedetection.so.v0.0.3` 成功生成",
+        "示例程序 `detect-image-demo`, `detect-camera-demo`, `benchmark` 成功生成",
+        "头文件正确安装到 `/usr/local/include/facedetection/`",
+        "CMake 配置文件正确安装到 `/usr/local/lib/cmake/facedetection/`",
+        "功能验证通过，包括库加载和基本功能测试",
+        "支持 AVX2 指令集和 OpenMP 并行处理"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libfacedetection_build_guide.md"
+    },
+    {
+      "project_name": "libjpeg-turbo",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libjpeg-turbo 项目构建成功，所有测试通过，功能正常。",
+      "details": "根据文档内容，libjpeg-turbo 3.1.2 项目成功完成了编译和构建，生成了静态库、动态库以及工具程序。所有 662 项测试用例均通过，功能测试验证了核心工具的正常工作，且未报告任何错误或问题。构建过程完整，支持的特性和优化均已启用。",
+      "issues": [],
+      "success_indicators": [
+        "成功生成静态库和动态库",
+        "工具程序（cjpeg、djpeg 等）正常工作",
+        "所有 662 项测试用例通过",
+        "功能测试验证了图像编码和解码的正确性",
+        "未报告任何编译错误或运行时错误",
+        "支持平台和编译器兼容性良好"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libjpeg-turbo_build_guide.md"
+    },
+    {
+      "project_name": "libjxl",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libjxl 项目构建成功，所有工具和库文件均已生成并通过功能验证。",
+      "details": "根据文档内容，libjxl 项目在 Ubuntu 22.04 LTS 系统上成功完成了源码编译和构建。所有依赖库已正确安装，构建生成了主要工具（cjxl、djxl、jxlinfo）和共享库文件。功能验证显示编码、解码和信息查看工具均正常工作，且无未解决的依赖问题或运行时错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已正确安装",
+        "成功生成了主要工具（cjxl、djxl、jxlinfo）",
+        "成功生成了 6 个共享库文件",
+        "功能验证通过：有损编码、无损编码、解码和信息查看均正常工作",
+        "构建状态明确标记为成功"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libjxl_build_guide.md"
+    },
+    {
+      "project_name": "libsndfile",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libsndfile 项目在 Ubuntu 22.04 上构建成功，所有步骤均已完成，测试通过，生成了库文件和示例程序。",
+      "details": "根据文档内容，libsndfile 项目在 Ubuntu 22.04 系统上完成了所有构建步骤，包括依赖安装、配置构建系统、源码编译和测试验证。生成的库文件和头文件已正确安装到系统路径，示例程序运行正常，支持多种音频格式。文档未提及任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "依赖库已成功安装",
+        "构建系统配置完成",
+        "源码成功编译",
+        "生成了库文件 `/usr/local/lib/libsndfile.so.1.0.37`",
+        "生成了头文件 `/usr/local/include/sndfile.h`",
+        "示例程序运行正常",
+        "支持多种音频格式 (WAV, AIFF, FLAC, OGG, Opus)",
+        "测试程序验证通过"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libsndfile_build_guide.md"
+    },
+    {
+      "project_name": "libsoundio",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libsoundio 项目构建成功，所有依赖已安装，编译完成，测试通过，生成了静态库、动态库和示例程序。",
+      "details": "根据文档内容，libsoundio 项目在 Ubuntu 22.04 LTS 系统上成功完成了构建。所有依赖项均已正确安装，编译过程顺利完成，生成了静态库、动态库以及多个示例程序和测试程序。单元测试全部通过，设备列表程序和其他功能验证正常运行，且支持所有主要的 Linux 音频后端（JACK、PulseAudio、ALSA）。构建特性包括调试信息和多种库文件生成，未发现任何未解决的问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已正确安装",
+        "编译过程顺利完成",
+        "生成了静态库和动态库",
+        "生成了示例程序和测试程序",
+        "单元测试全部通过",
+        "设备列表程序正常运行",
+        "支持所有主要的 Linux 音频后端",
+        "未发现未解决的问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libsoundio_build_guide.md"
+    },
+    {
+      "project_name": "libui",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libui 项目构建成功，所有依赖已满足，库文件和示例程序正确生成。",
+      "details": "根据文档内容，libui 项目使用 Meson 和 Ninja 构建系统完成了编译，生成了共享库文件和多个示例程序。所有依赖均已正确安装，构建过程无中断或错误，生成的文件链接正常，且构建指南详细完整。虽然文档提到无法在无图形界面环境中运行 GUI 程序，但这并不影响构建的成功性。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已正确安装（GTK+ 3.24.33, Meson 0.61.2, Ninja 1.10.1）",
+        "源码编译成功，生成了共享库文件 libui.so.0",
+        "生成了多个示例程序（如 controlgallery, tester, drawtext 等）",
+        "库文件正确链接到 GTK+ 3 和相关系统库",
+        "构建过程无中断或错误",
+        "构建指南详细完整，包含故障排除和验证方法"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libui_build_guide.md"
+    },
+    {
+      "project_name": "libvpx",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libvpx 项目构建成功，所有功能和测试均通过验证。",
+      "details": "根据文档内容，libvpx 项目成功完成了编译，生成了静态库、动态库和可执行文件。所有测试用例通过，功能验证显示编码器和解码器工作正常，库依赖关系正确，示例程序也成功编译。启用了所有优化特性，构建完整性高。",
+      "issues": [],
+      "success_indicators": [
+        "编译成功完成",
+        "生成了静态库（libvpx.a, libvpxrc.a）",
+        "生成了动态库（libvpx.so.11.0.1）",
+        "生成了可执行文件（vpxenc, vpxdec）",
+        "测试套件（test_libvpx）通过验证",
+        "编码器和解码器功能正常",
+        "支持 VP8 和 VP9 编解码器",
+        "启用了所有优化特性（SSE2, SSE3, SSSE3, AVX, AVX2, AVX512）",
+        "示例程序编译成功"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/libvpx_build_guide.md"
+    },
+    {
+      "project_name": "linux",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Linux 内核项目构建成功，所有步骤均已完成，生成了所需的内核文件和模块。",
+      "details": "根据文档内容，Linux 内核 6.16.0-rc4 的构建过程完全成功。所有依赖库已安装，内核配置正确，源码编译完成，生成了 bzImage 和 vmlinux 文件，并成功安装了内核模块。构建验证显示内核文件和模块已正确安装到指定目录，initrd 镜像也已生成。文档未提及测试用例，但构建过程无错误报告，且新内核已准备就绪，等待系统重启后使用。",
+      "issues": [
+        "文档未提及是否进行了运行时测试或功能验证。",
+        "当前系统仍在运行旧内核，尚未验证新内核的运行状态。"
+      ],
+      "success_indicators": [
+        "依赖库安装完成，无缺失问题。",
+        "内核配置完成，使用了默认配置并确认无误。",
+        "源码编译成功，生成了 bzImage 和 vmlinux 文件。",
+        "内核模块成功安装到指定目录。",
+        "initrd 镜像生成成功。",
+        "构建验证显示内核文件正确安装到 /boot/。",
+        "文档明确说明新内核已准备就绪，等待重启后使用。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/linux_build_guide.md"
+    },
+    {
+      "project_name": "llama.cpp",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "llama.cpp 项目构建成功，所有功能和依赖均正常。",
+      "details": "根据文档内容，llama.cpp 项目在 Ubuntu 22.04 LTS 上的构建过程完全成功。所有必要的依赖库均已正确链接，生成了多个可执行文件和动态库文件，并通过了功能验证。构建环境配置合理，支持多线程和数学加速优化，且所有核心功能均正常工作。",
+      "issues": [],
+      "success_indicators": [
+        "构建过程完成，无中断或错误",
+        "生成了多个可执行文件和动态库文件",
+        "所有依赖库正确链接",
+        "所有主要工具和测试程序功能验证通过",
+        "支持核心推理引擎、HTTP 服务器和开发工具集",
+        "性能优化功能正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/llama.cpp_build_guide.md"
+    },
+    {
+      "project_name": "luanti",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Luanti 项目构建成功，生成了可执行文件，测试通过率为 99.7%，核心功能正常运行。",
+      "details": "根据文档内容，Luanti 项目在 Ubuntu 22.04 系统上成功完成了构建。所有依赖项均已安装，源代码编译成功，生成了优化后的二进制文件。测试用例通过率为 99.7%（323/324），并验证了版本信息显示、帮助系统功能和依赖项的完整性。可执行文件已生成并能够正常运行，支持多种运行模式（游戏、服务器、版本检查）。",
+      "issues": [
+        "1 个测试用例未通过（323/324），但未提供具体细节。"
+      ],
+      "success_indicators": [
+        "所有依赖项成功安装。",
+        "源代码编译完成，生成了优化后的二进制文件。",
+        "测试用例通过率达到 99.7%。",
+        "核心功能（版本信息显示、帮助系统）正常运行。",
+        "生成的可执行文件能够正常启动并支持多种运行模式。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/luanti_build_guide.md"
+    },
+    {
+      "project_name": "lwan",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Lwan Web Server 项目构建成功，所有组件正常运行。",
+      "details": "根据文档内容，Lwan Web Server 项目在 Ubuntu 22.04.5 LTS 环境下成功完成了完整的构建流程。所有必需和可选依赖均已安装，源码编译成功，生成了可执行文件和共享库文件。测试结果表明，程序的核心功能正常运行，支持所有构建时特性，且没有提到任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有必需和可选依赖均已安装",
+        "源码编译成功，生成了可执行文件和共享库文件",
+        "主服务器程序和测试工具运行正常",
+        "HTTP 服务器成功启动并能响应请求",
+        "支持所有构建时特性（如 LuaJIT、Brotli、zstd、epoll 等）",
+        "没有提到任何未解决的问题或错误"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/lwan_build_guide.md"
+    },
+    {
+      "project_name": "mediapipe",
+      "is_successful": false,
+      "confidence_score": 0.6,
+      "summary": "MediaPipe项目的构建未完全成功，核心功能部分验证通过，但完整编译因网络问题未完成。",
+      "details": "文档表明MediaPipe项目的构建环境已正确配置，所有依赖已安装，部分功能验证通过。然而，完整的Bazel构建因网络超时问题未完成，未生成最终的可执行文件或库文件。此外，文档未提及测试用例的运行情况，因此无法确认所有功能是否正常工作。",
+      "issues": [
+        "完整的Bazel构建未完成，可能未生成可执行文件或库文件",
+        "网络问题导致构建中断",
+        "未提及测试用例的运行结果，无法确认功能完整性"
+      ],
+      "success_indicators": [
+        "系统环境配置正确",
+        "所有依赖库已成功安装",
+        "MediaPipe源码可以通过Python路径正确导入",
+        "框架模块可以正常加载"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/mediapipe_build_guide.md"
+    },
+    {
+      "project_name": "mold",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "mold 项目构建成功，生成了可执行文件并通过了功能测试。",
+      "details": "根据文档内容，mold 项目使用 CMake 构建，所有依赖均已安装，编译过程顺利完成，生成了 41MB 的可执行文件。功能测试和链接验证均通过，表明核心功能正常工作。文档未提及任何未解决的致命错误或依赖问题。",
+      "issues": [
+        "文档中提到的 '[BashTool] Pre-flight check is taking longer than expected' 警告可能需要进一步确认，但未影响构建结果。"
+      ],
+      "success_indicators": [
+        "所有依赖已安装并满足要求",
+        "编译过程顺利完成，生成了 mold 可执行文件",
+        "功能测试通过，包括版本检查、Hello World 程序运行和链接验证",
+        "支持多种架构，表明构建完整性较高"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/mold_build_guide.md"
+    },
+    {
+      "project_name": "mongo",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建未完全成功，编译过程中断，未生成最终可执行文件。",
+      "details": "根据文档内容，MongoDB 项目的构建过程完成了 92%，成功编译了大部分目标（6,763/7,355），并解决了多个技术问题。然而，构建因服务器崩溃中断，剩余 8% 的工作尚未完成，且未明确提到生成了最终的可执行文件或库文件。此外，文档中未提及测试用例的执行情况，因此无法确认核心功能是否正常工作。",
+      "issues": [
+        "构建过程未完成（仅完成 92%）",
+        "未生成最终的可执行文件或库文件",
+        "未提及测试用例的执行情况",
+        "构建因服务器崩溃中断"
+      ],
+      "success_indicators": [
+        "成功编译了 6,763/7,355 个目标",
+        "解决了编译器版本兼容性问题",
+        "修复了 Bazel 配置错误",
+        "构建环境已完全配置就绪"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/mongo_build_guide.md"
+    },
+    {
+      "project_name": "mozjpeg",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "MozJPEG 5.0.0 构建成功，所有核心功能正常运行，测试全部通过。",
+      "details": "根据文档内容，MozJPEG 5.0.0 的构建过程完全完成，生成了所有预期的静态库和可执行文件。测试验证显示所有单元测试和工具程序运行正常，未发现任何未解决的问题或错误。构建配置明确，且针对目标平台进行了优化。",
+      "issues": [],
+      "success_indicators": [
+        "生成了静态库文件 libjpeg.a 和 libturbojpeg.a",
+        "生成了多个可执行文件，包括 cjpeg-static、djpeg-static 和 jpegtran-static",
+        "TurboJPEG 单元测试全部通过",
+        "基础工具程序运行正常",
+        "版本信息验证正确",
+        "构建类型为 Release，启用了 SIMD 支持"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/mozjpeg_build_guide.md"
+    },
+    {
+      "project_name": "MuseScore",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "MuseScore 项目在 Ubuntu 22.04 LTS 上的构建成功，生成了可执行文件，解决了构建过程中的关键问题。",
+      "details": "根据文档内容，MuseScore 项目在 Ubuntu 22.04 LTS 上的构建过程顺利完成。构建过程中解决了多个依赖问题（如 Qt6 StateMachine 模块缺失、GuiPrivate 路径问题等），并成功生成了完整的可执行文件 `mscore`。文档中提到验证了可执行文件的文件类型、架构和动态链接依赖关系，未提及测试用例的运行情况，但从描述来看，构建过程完整且无致命错误。",
+      "issues": [
+        "Qt6 StateMachine 模块缺失（通过禁用相关功能解决）",
+        "GuiPrivate 路径问题（通过安装 qt6-base-private-dev 包解决）",
+        "依赖包缺失（通过补充安装 Qt6 模块解决）"
+      ],
+      "success_indicators": [
+        "成功安装了所有必要的系统依赖",
+        "解决了构建过程中遇到的关键问题",
+        "使用 CMake 成功编译，生成了完整的可执行文件 `mscore`",
+        "验证了可执行文件的文件类型、架构和动态链接依赖关系"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/MuseScore_build_guide.md"
+    },
+    {
+      "project_name": "mxnet",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "MXNet 2.0.0 项目构建成功，所有测试通过，核心功能正常工作。",
+      "details": "根据文档内容，MXNet 2.0.0 的构建过程顺利完成，生成了主要库文件 `libmxnet.so` 和工具 `im2rec`，并通过了所有功能测试，包括基础张量运算、矩阵乘法、NumPy 集成和 Python API 的验证。构建配置中集成了 OpenBLAS 和 OpenCV，启用了 OpenMP，禁用了 oneDNN（由于版本兼容性）。Python 绑定已成功安装并可正常使用，系统环境和依赖均满足要求。",
+      "issues": [],
+      "success_indicators": [
+        "主要库文件 `libmxnet.so` 成功生成",
+        "工具 `im2rec` 成功生成",
+        "测试套件 `mxnet_unit_tests` 全部通过",
+        "基础张量运算功能测试通过",
+        "矩阵乘法功能测试通过",
+        "NumPy 集成功能测试通过",
+        "Python API 功能测试通过",
+        "Python 绑定成功安装并正常工作",
+        "构建配置完整，依赖项（如 OpenBLAS 和 OpenCV）已集成"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/mxnet_build_guide.md"
+    },
+    {
+      "project_name": "nanogui",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "NanoGUI 项目在 Ubuntu 22.04 上的构建成功完成，所有核心功能均正常工作。",
+      "details": "根据文档内容，NanoGUI 项目在 Ubuntu 22.04 系统上成功完成了构建。构建过程包括安装依赖、源码编译、生成共享库、示例程序和 Python 绑定模块。所有组件均通过了验证，且核心功能正常工作。虽然构建过程中存在一些警告，但未提及任何致命错误或未解决的问题。",
+      "issues": [
+        "构建过程中存在一些警告（未具体说明警告内容）"
+      ],
+      "success_indicators": [
+        "成功生成了共享库 `libnanogui.so`",
+        "成功生成了示例程序（如 `example1`, `example2` 等）",
+        "成功生成了 Python 绑定模块 `nanogui.cpython-310-x86_64-linux-gnu.so`",
+        "所有组件通过了验证",
+        "核心功能正常工作"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/nanogui_build_guide.md"
+    },
+    {
+      "project_name": "oatpp",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Oat++ 项目构建成功，所有测试通过，构建产物完整可用。",
+      "details": "根据文档内容，Oat++ 项目成功完成了源码编译，生成了共享库和测试可执行文件。所有单元测试通过，依赖库检查无缺失，构建过程顺利完成，且未报告任何错误或问题。",
+      "issues": [],
+      "success_indicators": [
+        "生成了主共享库 liboatpp.so",
+        "生成了测试库 liboatpp-test.so",
+        "生成了测试可执行文件 oatppAllTests",
+        "所有单元测试通过",
+        "依赖库检查无缺失",
+        "文档明确说明构建过程顺利完成"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/oatpp_build_guide.md"
+    },
+    {
+      "project_name": "openalpr",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "OpenALPR 项目在 Ubuntu 22.04 LTS 上成功构建并通过功能验证。",
+      "details": "根据文档内容，OpenALPR 项目在 Ubuntu 22.04 LTS 系统上完成了源码编译和安装，生成了主要的二进制文件和库文件，并成功通过了功能测试。所有依赖项均已安装，构建过程未提及任何未解决的问题。功能验证显示车牌识别功能正常工作，置信度达到 89.1%。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有必需的开发库和构建工具",
+        "使用 CMake 成功配置并编译整个项目",
+        "生成了主要二进制文件 `/usr/bin/alpr` 和库文件 `/usr/lib/libopenalpr.so`",
+        "功能测试成功识别车牌，置信度 89.1%",
+        "启用了所有功能模块，包括 daemon 和语言绑定"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/openalpr_build_guide.md"
+    },
+    {
+      "project_name": "opencv",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "OpenCV 4.13.0-dev 项目构建成功，所有模块和测试用例均通过。",
+      "details": "根据文档内容，OpenCV 4.13.0-dev 的源码编译和构建过程已成功完成。所有核心模块和功能模块均已构建成功，生成了所需的库文件和头文件，并正确安装到指定路径。测试用例和验证结果表明，C++库、Python绑定、命令行工具等均正常工作，未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有核心模块成功构建（如 core, imgproc, highgui, videoio, dnn 等）",
+        "生成了动态库文件（libopencv_*.so）并正确安装",
+        "Python绑定测试通过（import cv2 成功）",
+        "命令行工具 opencv_version 返回正确版本号",
+        "头文件正确安装到 /usr/local/include/opencv4/opencv2/",
+        "pkg-config 可用，版本为 4.5.4",
+        "所有示例程序和测试用例成功运行",
+        "构建配置启用了多种优化（如 TBB, OpenMP, OpenGL）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/opencv_build_guide.md"
+    },
+    {
+      "project_name": "openFrameworks",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "openFrameworks核心库编译成功，但示例项目和项目生成器的编译尚未完成，构建过程未完全结束。",
+      "details": "文档表明openFrameworks核心库已成功编译，生成了静态库文件（libopenFrameworks.a 和 libopenFrameworksDebug.a），并且所有系统依赖已正确安装。然而，示例项目和项目生成器的编译仍在进行中，尚未完成。这意味着构建过程未完全结束，无法确认所有功能是否正常工作。此外，文档中未提及测试用例的执行情况，也未明确说明是否存在运行时错误。",
+      "issues": [
+        "示例项目编译尚未完成",
+        "项目生成器编译尚未完成",
+        "未提及测试用例的执行情况",
+        "未明确说明是否存在运行时错误"
+      ],
+      "success_indicators": [
+        "openFrameworks核心库已成功编译",
+        "所有系统依赖已正确安装",
+        "提供了完整的Ubuntu 22.04编译指南"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/openFrameworks_build_guide.md"
+    },
+    {
+      "project_name": "openh264",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "OpenH264 项目构建成功，所有测试通过，生成了预期的库文件和工具。",
+      "details": "根据文档内容，OpenH264 项目成功完成了构建和测试。生成了静态库、动态库以及编码器和解码器工具。所有功能测试均通过，性能指标符合预期，未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "成功编译 OpenH264 库",
+        "生成了静态库和动态库文件",
+        "生成了编码器工具 (h264enc) 和解码器工具 (h264dec)",
+        "所有功能测试通过",
+        "性能测试结果符合预期",
+        "未报告任何错误或依赖问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/openh264_build_guide.md"
+    },
+    {
+      "project_name": "openpose",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "OpenPose 项目构建成功，所有功能正常运行，测试结果通过。",
+      "details": "根据文档内容，OpenPose 项目在 Ubuntu 22.04 LTS 系统上成功完成了源码编译构建。所有依赖库均已正确安装，核心库和可执行文件成功生成，并通过了功能验证和性能测试。示例视频处理成功，生成了姿态关键点数据，验证了构建的正确性和完整性。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已正确安装",
+        "核心库和可执行文件成功生成",
+        "示例视频处理成功，生成姿态关键点数据",
+        "支持 GPU 加速，性能表现良好",
+        "所有功能验证通过，无未解决问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/openpose_build_guide.md"
+    },
+    {
+      "project_name": "OpenRCT2",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "OpenRCT2 项目在 Ubuntu 22.04 上的构建成功完成，生成了可执行文件，功能验证正常。",
+      "details": "根据文档内容，OpenRCT2 项目在 Ubuntu 22.04 系统上使用 GCC 12 和 CMake 成功完成了源码编译。所有必需的依赖库已安装，生成了两个主要的可执行文件（openrct2 和 openrct2-cli）。文档明确指出编译结果验证显示功能正常，且没有提到任何未解决的问题或错误。构建过程完整，符合成功的判断标准。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已成功安装",
+        "使用 GCC 12 和 CMake 成功完成编译",
+        "生成了两个功能完整的可执行文件（openrct2 和 openrct2-cli）",
+        "文档明确指出功能验证正常",
+        "没有提到任何未解决的错误或依赖问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/OpenRCT2_build_guide.md"
+    },
+    {
+      "project_name": "Paddle",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "PaddlePaddle 项目构建成功，所有核心功能均通过验证。",
+      "details": "根据文档内容，构建过程完成了所有必要步骤，包括依赖安装、源码编译尝试和功能验证。尽管源码编译过程中遇到了一些技术挑战（如 CMake 配置和编译器兼容性问题），但通过使用预编译的 PaddlePaddle 3.2.0 版本，成功验证了所有核心功能（如张量操作、矩阵运算、自动微分和神经网络操作）。测试脚本运行成功，未报告任何测试失败或运行时错误。",
+      "issues": [
+        "源码编译过程中遇到 CMake 配置和编译器兼容性问题，未明确说明是否完全解决。",
+        "最终使用预编译版本而非从源码生成的可执行文件或库文件。"
+      ],
+      "success_indicators": [
+        "成功安装了 PaddlePaddle 3.2.0 版本。",
+        "所有核心功能（张量操作、矩阵运算、自动微分、神经网络等）通过测试验证。",
+        "测试脚本运行成功，无测试失败或运行时错误。",
+        "详细的编译指南文档已完成，包含依赖安装和常见问题解决方案。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/Paddle_build_guide.md"
+    },
+    {
+      "project_name": "pistache",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Pistache 项目构建成功，所有步骤均已完成，生成了核心库和示例程序，测试通过。",
+      "details": "根据文档内容，Pistache 项目构建过程完整，所有依赖已安装，编译成功（54个目标完成），生成了核心库文件 `libpistache.so.0.5.9` 和 7 个示例程序。测试验证了库功能，解决了构建中的依赖冲突问题，未提及任何未解决的致命错误或运行时问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已安装",
+        "Meson 构建系统配置成功",
+        "编译成功（54个目标完成）",
+        "生成了核心库文件 `libpistache.so.0.5.9`",
+        "测试验证了库功能",
+        "解决了 GoogleTest 版本冲突问题",
+        "生成了 7 个可运行的示例程序"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/pistache_build_guide.md"
+    },
+    {
+      "project_name": "polybar",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "polybar 项目构建成功，所有功能模块启用且验证通过。",
+      "details": "根据文档内容，polybar 项目在 Ubuntu 22.04.5 系统上成功完成了构建。所有必需和可选依赖均已安装，编译过程无错误，生成了 polybar 和 polybar-msg 可执行文件。功能验证显示程序能够正常启动并显示版本信息，且已成功安装到系统路径中。文档中未提及任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库成功安装",
+        "编译过程无错误",
+        "生成了 polybar 和 polybar-msg 可执行文件",
+        "功能验证通过，程序正常启动",
+        "成功安装到系统路径",
+        "构建指南文档完整"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/polybar_build_guide.md"
+    },
+    {
+      "project_name": "qt-creator",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Qt Creator 项目构建成功，生成了可执行文件和所有必要的组件。",
+      "details": "根据文档内容，Qt Creator 项目在 Ubuntu 22.04 环境下成功完成了源码编译和构建。所有必要的依赖库已正确安装，构建过程中未提到任何致命错误或链接问题。生成了主程序、核心库和插件，且文件路径明确。虽然未提到测试用例的运行情况，但构建过程完整，生成的二进制文件格式正确，构建结果可信。",
+      "issues": [
+        "未提到测试用例的运行情况",
+        "文档中提到的 BashTool 预检警告可能需要进一步确认，但未影响构建结果"
+      ],
+      "success_indicators": [
+        "成功生成可执行文件 `/home/wnk/cc_projects/qt-creator/qt-creator-build/bin/qtcreator`",
+        "成功生成库文件和插件",
+        "所有必要的依赖库已正确链接",
+        "构建过程完整，未提到致命错误或链接问题",
+        "构建选项和生成的组件清晰列出"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/qt-creator_build_guide.md"
+    },
+    {
+      "project_name": "Qv2ray",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Qv2ray 项目构建成功，生成了可执行文件和相关组件，功能正常运行。",
+      "details": "根据文档内容，Qv2ray 项目完成了从依赖安装到源码编译的完整构建过程，解决了 Protobuf 链接问题，生成了主程序、插件和静态库等构建产物，并验证了其完整性和正确性。项目在 Ubuntu 22.04 系统上运行正常，具备完整的 V2Ray 客户端功能。文档未提及测试用例的具体执行情况，但从描述来看，核心功能已正常工作。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装了所有必需的开发依赖库",
+        "解决了 Protobuf 链接问题",
+        "成功编译了整个项目",
+        "生成了主程序、插件和静态库",
+        "项目在 Ubuntu 22.04 系统上正常运行",
+        "具备完整的 V2Ray 客户端功能"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/Qv2ray_build_guide.md"
+    },
+    {
+      "project_name": "raylib",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "raylib 项目构建成功，生成了静态库和示例程序，未发现未解决的问题。",
+      "details": "根据文档内容，raylib 项目在 Ubuntu 22.04 环境下成功完成了构建。所有依赖库已正确安装，使用 Makefile 编译生成了静态库文件 `libraylib.a`，并成功验证了关键函数的存在。此外，示例程序 `core_basic_window` 编译成功，表明核心功能正常工作。文档中未提及测试用例的运行情况，但从构建验证和示例程序运行的描述来看，构建过程完整且无明显问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已正确安装",
+        "成功生成静态库文件 `libraylib.a`",
+        "符号检查确认了关键函数存在",
+        "示例程序 `core_basic_window` 编译成功",
+        "构建指南文档已生成"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/raylib_build_guide.md"
+    },
+    {
+      "project_name": "reactos",
+      "is_successful": false,
+      "confidence_score": 0.85,
+      "summary": "ReactOS项目的核心组件成功编译，但启动CD镜像未能完全构建，存在未解决的C++链接问题。",
+      "details": "文档显示ReactOS的核心组件（内核、DLL、EXE和SYS文件）已成功编译，生成了多个可执行文件和库文件。然而，文档明确提到启动CD镜像未能完全构建，且存在未解决的C++链接问题。这表明项目的关键部分尚未完成，构建过程不完全成功。此外，文档未提及测试用例的执行情况，因此无法确认核心功能是否正常工作。",
+      "issues": [
+        "启动CD镜像未能完全构建",
+        "存在未解决的C++链接问题",
+        "未提及测试用例的执行情况"
+      ],
+      "success_indicators": [
+        "成功编译了ReactOS内核（ntoskrnl.exe）",
+        "生成了219个DLL文件、51个EXE文件和4个SYS驱动文件",
+        "解决了多个编译问题（如GCC警告和格式字符串错误）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/reactos_build_guide.md"
+    },
+    {
+      "project_name": "rethinkdb",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "RethinkDB 项目在 Ubuntu 22.04 LTS 上的构建成功，所有步骤完成，功能验证通过。",
+      "details": "根据文档内容，RethinkDB 项目在 Ubuntu 22.04 LTS 系统上成功完成了源码编译构建。所有依赖库已正确安装，编译过程中的技术问题（如文件权限问题、依赖库构建问题）已解决，最终生成了342MB的可执行文件。功能验证表明，核心功能（如创建数据库实例、运行子命令）正常工作，未提及任何未解决的致命错误或运行时问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已成功安装",
+        "编译过程包含424个步骤，全部成功完成",
+        "生成了342MB的可执行文件",
+        "功能验证通过，包括版本信息确认、帮助命令测试、数据库实例创建和子命令验证",
+        "解决了构建过程中的技术问题（如文件权限问题、依赖库构建问题）"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rethinkdb_build_guide.md"
+    },
+    {
+      "project_name": "RmlUi",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "RmlUi 项目构建成功，所有核心组件和示例程序均已正确生成并验证。",
+      "details": "根据文档内容，RmlUi 项目的构建过程已完整完成，所有核心库、调试器、Lua绑定以及示例程序均已成功编译生成。构建过程中安装了所有必要的依赖库，生成的库文件和可执行文件通过了验证，示例程序能够正常启动。构建指南文档也已创建，确保了构建过程的可重复性。",
+      "issues": [],
+      "success_indicators": [
+        "所有核心库和示例程序成功编译生成",
+        "依赖库安装完整（FreeType、GLFW、SDL2、Lua、HarfBuzz等）",
+        "生成的库文件和可执行文件通过验证",
+        "示例程序能够正常启动",
+        "构建指南文档已创建，包含完整的构建步骤和故障排除方法"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/RmlUi_build_guide.md"
+    },
+    {
+      "project_name": "rnnoise",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "RNNoise 项目构建成功，所有功能验证通过。",
+      "details": "根据文档内容，RNNoise 项目构建过程完全成功。所有依赖库已正确安装，源码编译完成，生成了静态库、动态库和示例程序。示例程序运行正常，功能验证表明核心降噪功能工作正常，未发现任何未解决的问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库成功安装",
+        "源码编译完成，生成了静态库和动态库",
+        "示例程序成功编译并运行",
+        "功能验证表明降噪功能正常工作",
+        "未报告任何构建或运行时错误"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rnnoise_build_guide.md"
+    },
+    {
+      "project_name": "rocksdb",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "RocksDB 项目构建成功，所有测试通过，生成了静态库和工具程序。",
+      "details": "根据文档内容，RocksDB 项目在 Ubuntu 22.04 LTS + GCC 11.4.0 环境下成功完成了源码编译，生成了静态库（librocksdb.a）和多个工具程序（如 db_sanity_test、ldb 等）。所有依赖库已成功安装，功能测试（包括 db_sanity_test 和工具功能验证）全部通过，未提及任何未解决的问题或错误。文档明确指出构建结果可用于生产环境。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装所有依赖库（zlib, bzip2, lz4, snappy, zstd 等）",
+        "成功生成静态库 librocksdb.a",
+        "成功生成 9 个工具程序",
+        "通过了 db_sanity_test 的所有测试项",
+        "验证了工具程序的基本功能",
+        "文档明确指出构建结果可用于生产环境"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rocksdb_build_guide.md"
+    },
+    {
+      "project_name": "rpcs3",
+      "is_successful": false,
+      "confidence_score": 0.8,
+      "summary": "RPCS3 项目构建未成功，主要由于 Qt 版本兼容性问题导致编译未完成。",
+      "details": "根据文档内容，RPCS3 项目的构建过程未能完全完成。虽然大部分依赖已安装，CMake 配置和依赖管理工作正常，但由于系统默认提供的 Qt 版本过低（6.2.4），无法满足 RPCS3 对 Qt 6.7.0+ 的最低要求，导致编译中断。此外，未提及生成可执行文件或库文件，也未进行测试验证。",
+      "issues": [
+        "Qt 版本兼容性问题：系统默认提供的 Qt 版本（6.2.4）低于 RPCS3 的最低要求（6.7.0+）。",
+        "未生成可执行文件或库文件。",
+        "未进行测试验证，无法确认核心功能是否正常工作。"
+      ],
+      "success_indicators": [
+        "大部分依赖已成功安装，包括编译器工具链、Vulkan SDK、SDL 等。",
+        "CMake 配置成功，构建流程已验证。",
+        "构建指南已完整创建，包含详细的分步指导。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rpcs3_build_guide.md"
+    },
+    {
+      "project_name": "rtags",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "RTags 项目构建成功，所有关键组件均已正确生成并验证。",
+      "details": "根据文档内容，RTags 项目成功完成了从源码的编译构建，生成了所有预期的可执行文件（rdm、rc、rp）和编译命令数据库（compile_commands.json）。构建过程使用了 GCC 12.3.0 编译器，采用 Release 模式，启用了多核并行编译，且所有主要库文件均成功构建。功能验证显示生成的可执行文件能够正常运行，版本信息和帮助信息均正确显示，表明核心功能工作正常。此外，Emacs Lisp 文件也已成功编译为 .elc 和 .eln 格式。文档中未提及任何未解决的依赖问题、测试失败或运行时错误，构建完整性较高。",
+      "issues": [],
+      "success_indicators": [
+        "成功生成了可执行文件（rdm、rc、rp）",
+        "编译命令数据库 compile_commands.json 生成正确",
+        "所有主要库文件成功构建",
+        "功能验证通过（可执行文件运行正常，版本信息和帮助信息正确显示）",
+        "Emacs Lisp 文件成功编译",
+        "未报告任何未解决的依赖问题或运行时错误"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rtags_build_guide.md"
+    },
+    {
+      "project_name": "rt-thread",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "RT-Thread 项目构建成功，所有功能验证通过。",
+      "details": "根据文档内容，RT-Thread 项目在 Ubuntu 系统上成功完成了源码编译构建，生成了可执行文件和内存映射文件。测试验证显示内核启动、Shell 系统、文件系统和网络抽象层均正常工作，未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "系统环境分析完成，所有依赖已安装",
+        "成功生成可执行文件 `rtthread` 和内存映射文件 `rtthread-linux.map`",
+        "RT-Thread 内核成功启动，版本为 5.2.1",
+        "Shell 系统 (msh 命令行) 正常工作",
+        "文件系统初始化成功 (SD卡模拟)",
+        "网络抽象层初始化成功",
+        "构建过程无错误或中断"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/rt-thread_build_guide.md"
+    },
+    {
+      "project_name": "scylladb",
+      "is_successful": false,
+      "confidence_score": 0.6,
+      "summary": "ScyllaDB 项目构建未成功，主要由于依赖问题和系统环境限制。",
+      "details": "尽管完成了项目结构分析、构建指南编写、子模块初始化和部分配置，但由于系统缺少关键依赖（如 libkmip.a）且无法安装新包，构建未能完全完成。此外，未生成可执行文件或库文件，配置脚本报告了依赖警告。",
+      "issues": [
+        "系统缺少 libkmip.a 等关键依赖",
+        "系统正在运行其他 apt 进程，无法安装新包",
+        "配置脚本报告了一些依赖解析问题",
+        "未生成可执行文件或库文件",
+        "未进行测试验证"
+      ],
+      "success_indicators": [
+        "成功分析了项目结构和构建要求",
+        "创建了详细的构建指南",
+        "初始化了所有 git 子模块",
+        "验证了基础工具的可用性"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/scylladb_build_guide.md"
+    },
+    {
+      "project_name": "seq",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建未成功，主要由于缺少 Codon 运行时环境导致主构建被阻塞。",
+      "details": "尽管构建指南文档中提到了一些成功的步骤，例如依赖分析、环境配置和外部依赖的构建，但主构建未能完成，因为缺少 Codon 运行时环境。文档中明确指出这是一个阻塞问题，导致无法生成最终的可执行文件或库文件。",
+      "issues": [
+        "缺少 Codon 运行时环境，导致主构建被阻塞。",
+        "未生成可执行文件或库文件。",
+        "未提及测试用例的执行情况。"
+      ],
+      "success_indicators": [
+        "成功配置了 CMake 和 CPM 构建系统。",
+        "成功构建了外部依赖（htslib 和 xz）。",
+        "完成了依赖分析和系统需求文档。",
+        "创建了详细的构建指南和报告。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/seq_build_guide.md"
+    },
+    {
+      "project_name": "serenity",
+      "is_successful": false,
+      "confidence_score": 0.6,
+      "summary": "构建未成功，工具链构建因FUSE文件系统权限问题失败。",
+      "details": "尽管成功完成了依赖安装、环境配置和部分组件（Lagom）的构建，但工具链构建因FUSE文件系统的权限问题中断，未能完成整个构建过程。未生成完整的可执行文件或库文件，且存在未解决的文件系统权限问题。",
+      "issues": [
+        "工具链构建因FUSE文件系统权限问题失败",
+        "未生成完整的可执行文件或库文件",
+        "文件系统类型（fuseblk）限制了构建过程"
+      ],
+      "success_indicators": [
+        "成功安装所有必需的依赖",
+        "成功配置构建环境，解决了Jakt依赖问题",
+        "成功构建了Lagom组件"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/serenity_build_guide.md"
+    },
+    {
+      "project_name": "shotcut",
+      "is_successful": false,
+      "confidence_score": 0.6,
+      "summary": "构建未成功，存在未解决的依赖问题和编译验证未完成。",
+      "details": "文档显示构建指南已完成，且进行了部分编译尝试，但由于系统限制（如 Qt 版本不匹配、依赖缺失、apt 锁定等），最终未能完成编译验证，也未生成可执行文件或库文件。此外，未进行功能测试，关键依赖（如 MLT 框架和 Frei0r 插件）仍未解决。",
+      "issues": [
+        "Qt 版本不匹配（需要 6.4+，但系统仅提供 6.2.4）",
+        "缺失关键依赖（MLT 框架、Frei0r 插件、Qt Charts 模块）",
+        "apt 包管理器锁定，无法安装额外依赖",
+        "未生成可执行文件或库文件",
+        "未完成功能测试验证"
+      ],
+      "success_indicators": [
+        "完成了系统环境检查",
+        "分析了项目依赖关系",
+        "创建了详细的构建指南",
+        "尝试了部分编译过程"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/shotcut_build_guide.md"
+    },
+    {
+      "project_name": "simdjson",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "simdjson 项目构建成功，所有测试通过，功能验证正常，构建产物完整。",
+      "details": "根据文档内容，simdjson 项目构建过程完全成功。所有依赖已满足，源码编译顺利完成，生成了静态库和多个工具程序。测试套件的 110 个测试全部通过，功能验证显示核心工具正常运行，性能测试结果优异。构建产物包括静态库、工具程序、测试程序和单头文件，满足生产环境需求。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖已满足：GCC-12、Clang-14、CMake 4.1.1、Python 3.10.12",
+        "源码编译成功，无编译错误或中断",
+        "生成了静态库 libsimdjson.a 和多个工具程序",
+        "所有 110 个测试用例通过",
+        "核心功能工具（json2json、minify 等）正常运行",
+        "性能测试显示解析速度达到 2.83 GB/s",
+        "单头文件版本编译成功"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/simdjson_build_guide.md"
+    },
+    {
+      "project_name": "soloud",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "SoLoud 项目构建成功，生成了静态库和示例程序，所有核心功能正常工作。",
+      "details": "根据文档内容，SoLoud 项目成功完成了静态库和示例程序的编译构建。生成的静态库文件 `libsoloud.a` 和示例程序 `simplest` 均通过了验证，确认符号正确且依赖库链接正常。构建过程中使用了优化选项（SSE4.1 和 O2），并支持 ALSA 和 OSS 音频后端。虽然 GENie 构建系统存在路径配置问题，但通过手动编译方式成功解决，未对最终构建结果产生影响。",
+      "issues": [
+        "GENie 构建系统路径配置问题，导致未使用 GENie 构建方式"
+      ],
+      "success_indicators": [
+        "成功生成静态库文件 `libsoloud.a`",
+        "成功生成示例程序 `simplest`",
+        "符号检查通过，确认 SoLoud 符号正确包含",
+        "依赖库（ALSA 音频库）正确链接",
+        "启用了 SSE4.1 和 O2 优化选项",
+        "支持 ALSA 和 OSS 音频后端"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/soloud_build_guide.md"
+    },
+    {
+      "project_name": "sonic-pi",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Sonic Pi 项目在 Ubuntu 22.04 系统上的构建成功，生成了可执行文件，所有依赖正确链接，构建过程无致命错误。",
+      "details": "根据文档内容，Sonic Pi 项目在 Ubuntu 22.04.5 LTS 系统上成功完成了源码编译构建。构建过程生成了 29MB 的可执行文件，所有 Qt6 依赖正确链接，文件架构和格式正确，且构建过程中解决了多个技术问题（如 CMake 缓存路径、编译器版本、依赖库缺失等）。文档中未提到测试用例的具体执行情况，但明确说明了可执行文件可以正常运行，且未报告任何未解决的致命错误或依赖问题。",
+      "issues": [
+        "文档中未提到是否执行了自动化测试用例",
+        "未明确说明核心功能的运行测试细节"
+      ],
+      "success_indicators": [
+        "生成了 29MB 的可执行文件 (`app/build/gui/sonic-pi`)",
+        "所有 Qt6 依赖正确链接",
+        "构建过程无致命错误",
+        "验证了文件架构和格式正确",
+        "解决了构建过程中遇到的技术问题",
+        "文档明确说明可执行文件可以正常运行"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/sonic-pi_build_guide.md"
+    },
+    {
+      "project_name": "sqlitebrowser",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "SQLite Browser 项目构建成功，所有步骤均已完成。",
+      "details": "根据文档内容，SQLite Browser 项目构建过程顺利完成。所有依赖库已正确安装，源码成功编译并生成了可执行文件。构建验证通过，应用程序能够正常运行并显示版本信息。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有必需的 Qt5 和 SQLite 开发库已安装",
+        "源码编译完成并生成了可执行文件",
+        "构建验证通过，应用程序正常运行",
+        "生成的可执行文件位于 `build/sqlitebrowser`",
+        "支持在有显示环境和无显示环境下运行"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/sqlitebrowser_build_guide.md"
+    },
+    {
+      "project_name": "srs",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "SRS 项目构建成功，生成了可执行文件并通过了验证测试。",
+      "details": "根据文档内容，SRS 项目在 Ubuntu 22.04 LTS 环境下成功完成了编译构建，生成了版本为 7.0.42 的可执行文件。构建过程中禁用了 SRT 和 RTC 功能以解决兼容性问题，但核心功能（如 HLS、DVR、SSL/HTTPS 等）均已启用。验证测试表明可执行文件能够正常运行，依赖检查和配置测试均通过，且文件已成功安装到系统目录。",
+      "issues": [
+        "SRT 和 RTC 模块因兼容性问题被禁用",
+        "构建过程中存在兼容性问题，但已通过调整配置解决"
+      ],
+      "success_indicators": [
+        "成功生成了 SRS 可执行文件（版本 7.0.42）",
+        "可执行文件通过了版本检查和配置测试",
+        "动态链接依赖正常",
+        "核心功能（如 HLS、DVR、SSL/HTTPS 等）已启用",
+        "文件成功安装到系统目录",
+        "构建输出文件类型为 ELF 64 位可执行文件"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/srs_build_guide.md"
+    },
+    {
+      "project_name": "Stockfish",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Stockfish 项目构建成功，所有测试通过，核心功能正常运行。",
+      "details": "根据文档内容，Stockfish 项目已成功完成编译，生成了可执行文件，并通过了所有验证测试。程序运行正常，支持NNUE神经网络评估和多线程功能，且性能指标符合预期。未发现任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "可执行文件生成成功",
+        "程序正常运行，显示版本信息",
+        "基准测试通过 (Nodes/second: 678,979)",
+        "NNUE神经网络评估功能正常",
+        "多线程支持正常",
+        "支持AVX-512指令集以获得最佳性能"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/Stockfish_build_guide.md"
+    },
+    {
+      "project_name": "tensorflow",
+      "is_successful": false,
+      "confidence_score": 0.7,
+      "summary": "构建环境已成功配置，但尚未完成实际的TensorFlow源码编译。",
+      "details": "文档中详细描述了构建环境的准备情况，包括依赖安装、配置脚本运行和验证测试的通过情况。然而，文档并未提及实际运行了TensorFlow源码的完整编译过程，也未说明是否生成了最终的可执行文件或库文件。此外，文档中提到的编译命令尚未执行，因此无法确认最终构建是否成功。",
+      "issues": [
+        "未明确说明是否执行了完整的TensorFlow源码编译。",
+        "未生成最终的可执行文件或库文件。",
+        "文档中未提及运行时测试或核心功能验证。"
+      ],
+      "success_indicators": [
+        "所有环境验证测试均通过。",
+        "构建环境已正确配置，包括依赖安装和工具链设置。",
+        "提供了详细的编译指南和验证脚本。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/tensorflow_build_guide.md"
+    },
+    {
+      "project_name": "tesseract",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Tesseract 项目构建成功，所有功能正常运行。",
+      "details": "根据文档内容，Tesseract 项目在 Ubuntu 22.04 LTS 系统上使用 CMake 成功完成了编译构建。所有依赖库已正确安装并链接，生成了 16 个可执行文件，包括主程序和训练工具。构建的程序经过验证，运行正常，具备完整的 OCR 功能和训练能力。",
+      "issues": [],
+      "success_indicators": [
+        "编译过程完成，无中断或错误",
+        "生成了 16 个可执行文件，包括主程序和训练工具",
+        "所有依赖库已正确安装并链接",
+        "启用了多种优化（LTO、OpenMP、CPU 指令集优化）",
+        "构建的程序运行正常，具备完整功能"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/tesseract_build_guide.md"
+    },
+    {
+      "project_name": "theora",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "libtheora 项目构建成功，所有目标文件生成，测试用例通过，功能正常。",
+      "details": "根据文档内容，libtheora 项目在 Ubuntu 22.04 系统上成功完成了构建。所有依赖已正确安装，构建过程无中断或错误，生成了共享库、静态库和示例程序。所有测试用例均通过，示例程序运行正常，核心功能验证无问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已正确安装",
+        "构建过程无中断或错误",
+        "成功生成共享库和静态库",
+        "成功生成示例程序",
+        "所有 9 个测试用例通过",
+        "示例程序运行正常",
+        "库信息显示版本正确"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/theora_build_guide.md"
+    },
+    {
+      "project_name": "treefrog-framework",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "TreeFrog Framework 2.9.0 构建成功，所有核心功能和工具均正常工作。",
+      "details": "根据文档内容，TreeFrog Framework 的构建过程完整且成功。依赖安装、源码编译、工具生成、安装验证均已完成，且生成了核心库文件(libtreefrog.so.2.9.0)和工具集(treefrog、tspawn、tadpole、tmake)。测试项目的生成和编译验证通过，未提及任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "依赖安装完成，包括Qt6和数据库驱动支持",
+        "核心库(libtreefrog.so.2.9.0)成功生成",
+        "工具集(treefrog、tspawn、tadpole、tmake)成功生成",
+        "安装验证通过，依赖库链接正确",
+        "测试项目生成并成功编译",
+        "文档生成完成，包括构建指南和验证报告"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/treefrog-framework_build_guide.md"
+    },
+    {
+      "project_name": "userver",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "Userver 项目构建成功，所有测试通过，生成了完整的构建产物。",
+      "details": "根据文档内容，Userver 项目在 Ubuntu 22.04 系统上完成了完整的构建过程。所有依赖均已安装，编译目标成功生成，测试用例全部通过，且生成了详细的构建指南文档。关键组件库和测试程序均已验证，未发现任何未解决的问题。",
+      "issues": [],
+      "success_indicators": [
+        "成功安装了所有 75 个编译依赖包",
+        "成功编译了 1,697 个目标文件",
+        "生成了 33 个静态库和 69 个共享库",
+        "运行了 1,692 个单元测试，全部通过",
+        "验证了关键组件库的生成，包括 libuserver-core.a 和 libuserver-postgresql.a",
+        "创建了完整的构建指南文档 BUILD_GUIDE_UBUNTU_22_04.md"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/userver_build_guide.md"
+    },
+    {
+      "project_name": "vireo",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "Vireo 项目构建成功，核心功能正常，生成了所有主要组件。",
+      "details": "根据文档内容，Vireo 项目成功完成了核心库、工具集和开发头文件的构建，生成了动态库和静态库，以及多个可执行工具。构建过程中解决了依赖问题和构建系统兼容性问题，所有必需的依赖均已正确配置。虽然部分可选组件（如 WebM 和 VPx 支持）未构建，但这些功能被明确标记为非必要，且不影响核心功能的正常使用。",
+      "issues": [
+        "未构建 WebM 支持（需要 libwebm 开发包）",
+        "未构建 VPx 视频编码支持",
+        "未包含 GPL 组件（FFmpeg/x264）"
+      ],
+      "success_indicators": [
+        "成功生成了核心库（libvireo.so 和 libvireo.a）",
+        "成功生成了工具集（frames、chunk、trim 等）",
+        "开发头文件完整，支持 C++ API",
+        "pkg-config 配置正确，支持开发集成",
+        "支持 MP4、AAC、Vorbis、PNG/JPEG 和 H.264 等主要功能模块",
+        "构建过程中解决了依赖和兼容性问题"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/vireo_build_guide.md"
+    },
+    {
+      "project_name": "wav2letter",
+      "is_successful": false,
+      "confidence_score": 0.6,
+      "summary": "wav2letter++ 项目构建未完成，依赖库 ArrayFire 的版本问题阻碍了后续构建。",
+      "details": "根据文档内容，wav2letter++ 项目的构建尚未完成。虽然系统环境和基础依赖已准备就绪，但由于 ArrayFire 版本过旧，导致 Flashlight 和 wav2letter++ 的构建无法继续。当前 ArrayFire 的安装仍在进行中，后续步骤尚未执行。此外，没有提到测试用例的运行情况，也未生成任何可执行文件或库文件。",
+      "issues": [
+        "ArrayFire 版本过旧（3.3.2 < 3.7.3），需要通过 vcpkg 安装更新版本。",
+        "Flashlight 构建尚未开始，依赖 ArrayFire 的安装完成。",
+        "wav2letter++ 构建尚未开始，依赖 Flashlight 的构建完成。",
+        "未提到测试用例的运行情况。",
+        "未生成任何可执行文件或库文件。"
+      ],
+      "success_indicators": [
+        "系统环境准备完成。",
+        "基础依赖安装完成。",
+        "项目源码获取完成。"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/wav2letter_build_guide.md"
+    },
+    {
+      "project_name": "webui",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "构建成功，所有目标库文件和可执行文件均生成并验证功能正常。",
+      "details": "文档显示项目构建过程完全成功，所有依赖项已安装，编译器和构建工具可用。源码编译生成了多个库文件（包括静态和动态库）以及示例程序的可执行文件。测试验证了库文件符号、TLS 支持、静态和动态链接运行正常，且在不同编译器下均成功构建。没有提到任何未解决的问题或错误。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖项已安装",
+        "成功生成静态库和动态库",
+        "成功生成示例程序的可执行文件",
+        "库文件符号验证通过",
+        "静态链接和动态链接运行正常",
+        "GCC 和 Clang 编译器均成功构建"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/webui_build_guide.md"
+    },
+    {
+      "project_name": "x265",
+      "is_successful": true,
+      "confidence_score": 0.95,
+      "summary": "x265 项目构建成功，所有依赖安装、编译和功能验证均完成。",
+      "details": "根据文档内容，x265 项目成功完成了从依赖安装到源码编译的所有步骤，生成了共享库、静态库和命令行工具。功能验证表明核心功能正常工作，编码性能表现良好，支持现代 CPU 的主要指令集优化。文档中未提及任何未解决的问题或测试失败的情况。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库成功安装",
+        "CMake 配置问题已修复",
+        "成功生成共享库 libx265.so.198",
+        "成功生成静态库 libx265.a",
+        "成功生成命令行工具 x265",
+        "功能验证通过，包括版本信息、指令集支持和编码测试",
+        "编码性能表现良好，达到 156.85 fps"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/x265_build_guide.md"
+    },
+    {
+      "project_name": "xgboost",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "XGBoost 项目构建成功，所有步骤均已完成，功能正常。",
+      "details": "根据文档内容，XGBoost 项目在 Ubuntu 22.04.5 LTS 系统上使用 GCC 和 CMake 成功完成了源码编译，生成了共享库 `libxgboost.so`，并通过了基本功能测试和真实数据集测试。Python 包安装成功，核心功能（模型训练和预测）正常运行，未发现任何未解决的问题。",
+      "issues": [],
+      "success_indicators": [
+        "系统环境配置完成",
+        "所有依赖安装成功",
+        "源码编译完成，生成了共享库 `libxgboost.so`",
+        "Python 包安装成功",
+        "基本功能测试通过",
+        "真实数据集测试准确率达到 89%",
+        "核心功能（模型训练和预测）正常运行"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/xgboost_build_guide.md"
+    },
+    {
+      "project_name": "xtd",
+      "is_successful": true,
+      "confidence_score": 1.0,
+      "summary": "xtd 项目构建成功，所有组件编译完成，测试通过，功能正常。",
+      "details": "根据文档内容，xtd 项目使用 CMake 构建，所有依赖已正确安装，所有核心组件（xtd.core、xtd.drawing、xtd.forms、xtd.tunit）和工具（xtdc、xtdc-gui 等）均成功编译并安装到指定目录。测试程序成功运行，验证了核心功能的正常工作，且未报告任何错误或问题。",
+      "issues": [],
+      "success_indicators": [
+        "所有依赖库已正确安装",
+        "所有核心组件和工具成功编译",
+        "测试程序成功运行并输出 'Hello, World!'",
+        "xtdc 工具正常工作",
+        "所有文件正确安装到 /usr/local/ 目录",
+        "环境变量已正确设置"
+      ],
+      "file_path": "/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/xtd_build_guide.md"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The `write_read_test.c` file does not exist; only template files like `write_read_test.def` and `write_read_test.tpl` are present. This likely causes the build to fail. Would you like me to investigate generating or substituting this test file, or attempt a workaround?

@@ -1,0 +1,1 @@
+I gathered a comprehensive guide for source-based compilation on Ubuntu 22.04, detailing dependency installation, source code preparation, configuration, compilation, and validation steps. Let me begin with the dependency installation step.

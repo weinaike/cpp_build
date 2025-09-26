@@ -1,0 +1,622 @@
+2025-09-24 15:15:11,813 - ERROR - 程序执行失败: 需要设置 OPENAI_API_KEY 环境变量或传入 API 密钥
+2025-09-24 15:25:53,075 - INFO - 加载了 100 个项目
+2025-09-24 15:25:53,075 - INFO - 进度: 1/100 - 检查 8cc
+2025-09-24 15:25:53,075 - INFO - 检查项目: 8cc
+2025-09-24 15:25:58,296 - INFO - Retrying request to /chat/completions in 0.396362 seconds
+2025-09-24 15:26:03,732 - INFO - Retrying request to /chat/completions in 0.979805 seconds
+2025-09-24 15:26:09,757 - ERROR - API 调用失败: Connection error.
+2025-09-24 15:26:09,758 - INFO - 进度: 2/100 - 检查 arangodb
+2025-09-24 15:26:09,758 - INFO - 检查项目: arangodb
+2025-09-24 15:26:14,785 - INFO - Retrying request to /chat/completions in 0.395383 seconds
+2025-09-24 15:26:20,229 - INFO - Retrying request to /chat/completions in 0.848812 seconds
+2025-09-24 15:26:26,123 - ERROR - API 调用失败: Connection error.
+2025-09-24 15:26:26,123 - INFO - 进度: 3/100 - 检查 aseprite
+2025-09-24 15:26:26,124 - INFO - 检查项目: aseprite
+2025-09-24 15:26:31,165 - INFO - Retrying request to /chat/completions in 0.488423 seconds
+2025-09-24 15:26:36,689 - INFO - Retrying request to /chat/completions in 0.941912 seconds
+2025-09-24 15:27:40,171 - INFO - 加载了 100 个项目
+2025-09-24 15:27:40,171 - INFO - 进度: 1/100 - 检查 8cc
+2025-09-24 15:27:40,171 - INFO - 检查项目: 8cc
+2025-09-24 15:27:44,437 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:27:44,452 - INFO - 进度: 2/100 - 检查 arangodb
+2025-09-24 15:27:44,452 - INFO - 检查项目: arangodb
+2025-09-24 15:27:47,655 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:27:47,657 - INFO - 进度: 3/100 - 检查 aseprite
+2025-09-24 15:27:47,657 - INFO - 检查项目: aseprite
+2025-09-24 15:27:50,300 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:27:50,301 - INFO - 进度: 4/100 - 检查 aubio
+2025-09-24 15:27:50,301 - INFO - 检查项目: aubio
+2025-09-24 15:27:53,754 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:27:53,756 - INFO - 进度: 5/100 - 检查 audioFlux
+2025-09-24 15:27:53,756 - INFO - 检查项目: audioFlux
+2025-09-24 15:27:57,010 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:27:57,012 - INFO - 进度: 6/100 - 检查 binutils-gdb
+2025-09-24 15:27:57,012 - INFO - 检查项目: binutils-gdb
+2025-09-24 15:28:04,809 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:04,810 - INFO - 进度: 7/100 - 检查 blender
+2025-09-24 15:28:04,811 - INFO - 检查项目: blender
+2025-09-24 15:28:07,906 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:07,908 - INFO - 进度: 8/100 - 检查 caffe
+2025-09-24 15:28:07,908 - INFO - 检查项目: caffe
+2025-09-24 15:28:11,702 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:11,704 - INFO - 进度: 9/100 - 检查 civetweb
+2025-09-24 15:28:11,704 - INFO - 检查项目: civetweb
+2025-09-24 15:28:16,382 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:16,383 - INFO - 进度: 10/100 - 检查 clang
+2025-09-24 15:28:16,383 - INFO - 检查项目: clang
+2025-09-24 15:28:19,555 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:19,556 - INFO - 进度: 11/100 - 检查 cocos2d-x
+2025-09-24 15:28:19,557 - INFO - 检查项目: cocos2d-x
+2025-09-24 15:28:23,088 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:23,090 - INFO - 进度: 12/100 - 检查 codeblocks
+2025-09-24 15:28:23,090 - INFO - 检查项目: codeblocks
+2025-09-24 15:28:27,126 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:27,127 - INFO - 进度: 13/100 - 检查 codelite
+2025-09-24 15:28:27,128 - INFO - 检查项目: codelite
+2025-09-24 15:28:30,825 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:30,827 - INFO - 进度: 14/100 - 检查 codon
+2025-09-24 15:28:30,827 - INFO - 检查项目: codon
+2025-09-24 15:28:33,826 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:33,827 - INFO - 进度: 15/100 - 检查 color_coded
+2025-09-24 15:28:33,828 - INFO - 检查项目: color_coded
+2025-09-24 15:28:36,455 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:36,457 - INFO - 进度: 16/100 - 检查 cpprestsdk
+2025-09-24 15:28:36,458 - INFO - 检查项目: cpprestsdk
+2025-09-24 15:28:39,297 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:39,299 - INFO - 进度: 17/100 - 检查 cquery
+2025-09-24 15:28:39,299 - INFO - 检查项目: cquery
+2025-09-24 15:28:42,466 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:42,468 - INFO - 进度: 18/100 - 检查 crow
+2025-09-24 15:28:42,468 - INFO - 检查项目: crow
+2025-09-24 15:28:45,439 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:45,441 - INFO - 进度: 19/100 - 检查 DearPyGui
+2025-09-24 15:28:45,441 - INFO - 检查项目: DearPyGui
+2025-09-24 15:28:48,278 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:48,280 - INFO - 进度: 20/100 - 检查 DOOM
+2025-09-24 15:28:48,280 - INFO - 检查项目: DOOM
+2025-09-24 15:28:51,659 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:51,661 - INFO - 进度: 21/100 - 检查 drogon
+2025-09-24 15:28:51,661 - INFO - 检查项目: drogon
+2025-09-24 15:28:54,173 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:54,175 - INFO - 进度: 22/100 - 检查 duckdb
+2025-09-24 15:28:54,175 - INFO - 检查项目: duckdb
+2025-09-24 15:28:56,949 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:28:56,950 - INFO - 进度: 23/100 - 检查 elements
+2025-09-24 15:28:56,950 - INFO - 检查项目: elements
+2025-09-24 15:29:00,037 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:00,039 - INFO - 进度: 24/100 - 检查 emacs-gdb
+2025-09-24 15:29:00,039 - INFO - 检查项目: emacs-gdb
+2025-09-24 15:29:00,039 - WARNING - 文件 /home/wnk/code/wr124/cpp_build_new/cc_sdk/logs/emacs-gdb_build_guide.md 内容为空
+2025-09-24 15:29:00,039 - INFO - 进度: 25/100 - 检查 entt
+2025-09-24 15:29:00,039 - INFO - 检查项目: entt
+2025-09-24 15:29:02,313 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:02,314 - INFO - 进度: 26/100 - 检查 facil.io
+2025-09-24 15:29:02,314 - INFO - 检查项目: facil.io
+2025-09-24 15:29:02,315 - WARNING - 未找到 facil.io 的构建指南文件
+2025-09-24 15:29:02,315 - INFO - 进度: 27/100 - 检查 FFmpeg
+2025-09-24 15:29:02,315 - INFO - 检查项目: FFmpeg
+2025-09-24 15:29:02,315 - WARNING - 未找到 FFmpeg 的构建指南文件
+2025-09-24 15:29:02,315 - INFO - 进度: 28/100 - 检查 flameshot
+2025-09-24 15:29:02,315 - INFO - 检查项目: flameshot
+2025-09-24 15:29:02,315 - WARNING - 未找到 flameshot 的构建指南文件
+2025-09-24 15:29:02,315 - INFO - 进度: 29/100 - 检查 foundationdb
+2025-09-24 15:29:02,315 - INFO - 检查项目: foundationdb
+2025-09-24 15:29:02,315 - WARNING - 未找到 foundationdb 的构建指南文件
+2025-09-24 15:29:02,315 - INFO - 进度: 30/100 - 检查 gameplay
+2025-09-24 15:29:02,315 - INFO - 检查项目: gameplay
+2025-09-24 15:29:02,315 - WARNING - 未找到 gameplay 的构建指南文件
+2025-09-24 15:29:02,316 - INFO - 进度: 31/100 - 检查 gcc
+2025-09-24 15:29:02,316 - INFO - 检查项目: gcc
+2025-09-24 15:29:02,316 - WARNING - 未找到 gcc 的构建指南文件
+2025-09-24 15:29:02,316 - INFO - 进度: 32/100 - 检查 geany
+2025-09-24 15:29:02,316 - INFO - 检查项目: geany
+2025-09-24 15:29:02,316 - WARNING - 未找到 geany 的构建指南文件
+2025-09-24 15:29:02,316 - INFO - 进度: 33/100 - 检查 godot
+2025-09-24 15:29:02,316 - INFO - 检查项目: godot
+2025-09-24 15:29:02,316 - WARNING - 未找到 godot 的构建指南文件
+2025-09-24 15:29:02,316 - INFO - 进度: 34/100 - 检查 gpt4all
+2025-09-24 15:29:02,316 - INFO - 检查项目: gpt4all
+2025-09-24 15:29:02,316 - WARNING - 未找到 gpt4all 的构建指南文件
+2025-09-24 15:29:02,316 - INFO - 进度: 35/100 - 检查 guetzli
+2025-09-24 15:29:02,316 - INFO - 检查项目: guetzli
+2025-09-24 15:29:02,317 - WARNING - 未找到 guetzli 的构建指南文件
+2025-09-24 15:29:02,317 - INFO - 进度: 36/100 - 检查 irony-mode
+2025-09-24 15:29:02,317 - INFO - 检查项目: irony-mode
+2025-09-24 15:29:02,317 - WARNING - 未找到 irony-mode 的构建指南文件
+2025-09-24 15:29:02,317 - INFO - 进度: 37/100 - 检查 jucipp
+2025-09-24 15:29:02,317 - INFO - 检查项目: jucipp
+2025-09-24 15:29:02,317 - WARNING - 未找到 jucipp 的构建指南文件
+2025-09-24 15:29:02,317 - INFO - 进度: 38/100 - 检查 kvrocks
+2025-09-24 15:29:02,317 - INFO - 检查项目: kvrocks
+2025-09-24 15:29:02,317 - WARNING - 未找到 kvrocks 的构建指南文件
+2025-09-24 15:29:02,317 - INFO - 进度: 39/100 - 检查 leveldb
+2025-09-24 15:29:02,317 - INFO - 检查项目: leveldb
+2025-09-24 15:29:02,317 - WARNING - 未找到 leveldb 的构建指南文件
+2025-09-24 15:29:02,317 - INFO - 进度: 40/100 - 检查 libde265
+2025-09-24 15:29:02,317 - INFO - 检查项目: libde265
+2025-09-24 15:29:02,318 - WARNING - 未找到 libde265 的构建指南文件
+2025-09-24 15:29:02,318 - INFO - 进度: 41/100 - 检查 libfacedetection
+2025-09-24 15:29:02,318 - INFO - 检查项目: libfacedetection
+2025-09-24 15:29:02,318 - WARNING - 未找到 libfacedetection 的构建指南文件
+2025-09-24 15:29:02,318 - INFO - 进度: 42/100 - 检查 libjpeg-turbo
+2025-09-24 15:29:02,318 - INFO - 检查项目: libjpeg-turbo
+2025-09-24 15:29:02,318 - WARNING - 未找到 libjpeg-turbo 的构建指南文件
+2025-09-24 15:29:02,318 - INFO - 进度: 43/100 - 检查 libjxl
+2025-09-24 15:29:02,318 - INFO - 检查项目: libjxl
+2025-09-24 15:29:02,318 - WARNING - 未找到 libjxl 的构建指南文件
+2025-09-24 15:29:02,318 - INFO - 进度: 44/100 - 检查 libsndfile
+2025-09-24 15:29:02,318 - INFO - 检查项目: libsndfile
+2025-09-24 15:29:02,318 - WARNING - 未找到 libsndfile 的构建指南文件
+2025-09-24 15:29:02,318 - INFO - 进度: 45/100 - 检查 libsoundio
+2025-09-24 15:29:02,319 - INFO - 检查项目: libsoundio
+2025-09-24 15:29:02,319 - WARNING - 未找到 libsoundio 的构建指南文件
+2025-09-24 15:29:02,319 - INFO - 进度: 46/100 - 检查 libui
+2025-09-24 15:29:02,319 - INFO - 检查项目: libui
+2025-09-24 15:29:02,319 - WARNING - 未找到 libui 的构建指南文件
+2025-09-24 15:29:02,319 - INFO - 进度: 47/100 - 检查 libvpx
+2025-09-24 15:29:02,319 - INFO - 检查项目: libvpx
+2025-09-24 15:29:02,319 - WARNING - 未找到 libvpx 的构建指南文件
+2025-09-24 15:29:02,319 - INFO - 进度: 48/100 - 检查 linux
+2025-09-24 15:29:02,319 - INFO - 检查项目: linux
+2025-09-24 15:29:02,319 - WARNING - 未找到 linux 的构建指南文件
+2025-09-24 15:29:02,319 - INFO - 进度: 49/100 - 检查 llama.cpp
+2025-09-24 15:29:02,319 - INFO - 检查项目: llama.cpp
+2025-09-24 15:29:02,319 - WARNING - 未找到 llama.cpp 的构建指南文件
+2025-09-24 15:29:02,319 - INFO - 进度: 50/100 - 检查 luanti
+2025-09-24 15:29:02,320 - INFO - 检查项目: luanti
+2025-09-24 15:29:02,320 - WARNING - 未找到 luanti 的构建指南文件
+2025-09-24 15:29:02,320 - INFO - 进度: 51/100 - 检查 lwan
+2025-09-24 15:29:02,320 - INFO - 检查项目: lwan
+2025-09-24 15:29:02,320 - WARNING - 未找到 lwan 的构建指南文件
+2025-09-24 15:29:02,320 - INFO - 进度: 52/100 - 检查 mediapipe
+2025-09-24 15:29:02,320 - INFO - 检查项目: mediapipe
+2025-09-24 15:29:02,320 - WARNING - 未找到 mediapipe 的构建指南文件
+2025-09-24 15:29:02,320 - INFO - 进度: 53/100 - 检查 mold
+2025-09-24 15:29:02,320 - INFO - 检查项目: mold
+2025-09-24 15:29:02,320 - WARNING - 未找到 mold 的构建指南文件
+2025-09-24 15:29:02,320 - INFO - 进度: 54/100 - 检查 mongo
+2025-09-24 15:29:02,320 - INFO - 检查项目: mongo
+2025-09-24 15:29:02,320 - WARNING - 未找到 mongo 的构建指南文件
+2025-09-24 15:29:02,321 - INFO - 进度: 55/100 - 检查 mozjpeg
+2025-09-24 15:29:02,321 - INFO - 检查项目: mozjpeg
+2025-09-24 15:29:02,321 - WARNING - 未找到 mozjpeg 的构建指南文件
+2025-09-24 15:29:02,321 - INFO - 进度: 56/100 - 检查 MuseScore
+2025-09-24 15:29:02,321 - INFO - 检查项目: MuseScore
+2025-09-24 15:29:02,321 - WARNING - 未找到 MuseScore 的构建指南文件
+2025-09-24 15:29:02,321 - INFO - 进度: 57/100 - 检查 mxnet
+2025-09-24 15:29:02,321 - INFO - 检查项目: mxnet
+2025-09-24 15:29:02,321 - WARNING - 未找到 mxnet 的构建指南文件
+2025-09-24 15:29:02,321 - INFO - 进度: 58/100 - 检查 nanogui
+2025-09-24 15:29:02,321 - INFO - 检查项目: nanogui
+2025-09-24 15:29:06,268 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:06,269 - INFO - 进度: 59/100 - 检查 oatpp
+2025-09-24 15:29:06,270 - INFO - 检查项目: oatpp
+2025-09-24 15:29:08,733 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:08,734 - INFO - 进度: 60/100 - 检查 openalpr
+2025-09-24 15:29:08,735 - INFO - 检查项目: openalpr
+2025-09-24 15:29:12,355 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:12,357 - INFO - 进度: 61/100 - 检查 opencv
+2025-09-24 15:29:12,357 - INFO - 检查项目: opencv
+2025-09-24 15:29:12,358 - WARNING - 未找到 opencv 的构建指南文件
+2025-09-24 15:29:12,358 - INFO - 进度: 62/100 - 检查 openFrameworks
+2025-09-24 15:29:12,358 - INFO - 检查项目: openFrameworks
+2025-09-24 15:29:15,744 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:15,745 - INFO - 进度: 63/100 - 检查 openh264
+2025-09-24 15:29:15,746 - INFO - 检查项目: openh264
+2025-09-24 15:29:15,746 - WARNING - 未找到 openh264 的构建指南文件
+2025-09-24 15:29:15,746 - INFO - 进度: 64/100 - 检查 openpose
+2025-09-24 15:29:15,746 - INFO - 检查项目: openpose
+2025-09-24 15:29:19,242 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:19,243 - INFO - 进度: 65/100 - 检查 OpenRCT2
+2025-09-24 15:29:19,243 - INFO - 检查项目: OpenRCT2
+2025-09-24 15:29:19,244 - WARNING - 未找到 OpenRCT2 的构建指南文件
+2025-09-24 15:29:19,244 - INFO - 进度: 66/100 - 检查 Paddle
+2025-09-24 15:29:19,244 - INFO - 检查项目: Paddle
+2025-09-24 15:29:22,252 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:22,254 - INFO - 进度: 67/100 - 检查 pistache
+2025-09-24 15:29:22,254 - INFO - 检查项目: pistache
+2025-09-24 15:29:22,254 - WARNING - 未找到 pistache 的构建指南文件
+2025-09-24 15:29:22,254 - INFO - 进度: 68/100 - 检查 polybar
+2025-09-24 15:29:22,255 - INFO - 检查项目: polybar
+2025-09-24 15:29:22,255 - WARNING - 未找到 polybar 的构建指南文件
+2025-09-24 15:29:22,255 - INFO - 进度: 69/100 - 检查 qt-creator
+2025-09-24 15:29:22,255 - INFO - 检查项目: qt-creator
+2025-09-24 15:29:25,072 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:25,074 - INFO - 进度: 70/100 - 检查 Qv2ray
+2025-09-24 15:29:25,074 - INFO - 检查项目: Qv2ray
+2025-09-24 15:29:28,849 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:28,851 - INFO - 进度: 71/100 - 检查 raylib
+2025-09-24 15:29:28,851 - INFO - 检查项目: raylib
+2025-09-24 15:29:28,851 - WARNING - 未找到 raylib 的构建指南文件
+2025-09-24 15:29:28,851 - INFO - 进度: 72/100 - 检查 reactos
+2025-09-24 15:29:28,852 - INFO - 检查项目: reactos
+2025-09-24 15:29:33,411 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:33,413 - INFO - 进度: 73/100 - 检查 rethinkdb
+2025-09-24 15:29:33,413 - INFO - 检查项目: rethinkdb
+2025-09-24 15:29:36,876 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:36,877 - INFO - 进度: 74/100 - 检查 RmlUi
+2025-09-24 15:29:36,878 - INFO - 检查项目: RmlUi
+2025-09-24 15:29:41,423 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:41,425 - INFO - 进度: 75/100 - 检查 rnnoise
+2025-09-24 15:29:41,425 - INFO - 检查项目: rnnoise
+2025-09-24 15:29:43,798 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:43,799 - INFO - 进度: 76/100 - 检查 rocksdb
+2025-09-24 15:29:43,800 - INFO - 检查项目: rocksdb
+2025-09-24 15:29:49,670 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:49,672 - INFO - 进度: 77/100 - 检查 rpcs3
+2025-09-24 15:29:49,672 - INFO - 检查项目: rpcs3
+2025-09-24 15:29:49,672 - WARNING - 未找到 rpcs3 的构建指南文件
+2025-09-24 15:29:49,672 - INFO - 进度: 78/100 - 检查 rtags
+2025-09-24 15:29:49,672 - INFO - 检查项目: rtags
+2025-09-24 15:29:49,673 - WARNING - 未找到 rtags 的构建指南文件
+2025-09-24 15:29:49,673 - INFO - 进度: 79/100 - 检查 rt-thread
+2025-09-24 15:29:49,673 - INFO - 检查项目: rt-thread
+2025-09-24 15:29:49,673 - WARNING - 未找到 rt-thread 的构建指南文件
+2025-09-24 15:29:49,673 - INFO - 进度: 80/100 - 检查 scylladb
+2025-09-24 15:29:49,673 - INFO - 检查项目: scylladb
+2025-09-24 15:29:49,673 - WARNING - 未找到 scylladb 的构建指南文件
+2025-09-24 15:29:49,673 - INFO - 进度: 81/100 - 检查 seq
+2025-09-24 15:29:49,673 - INFO - 检查项目: seq
+2025-09-24 15:29:49,674 - WARNING - 未找到 seq 的构建指南文件
+2025-09-24 15:29:49,674 - INFO - 进度: 82/100 - 检查 serenity
+2025-09-24 15:29:49,674 - INFO - 检查项目: serenity
+2025-09-24 15:29:49,674 - WARNING - 未找到 serenity 的构建指南文件
+2025-09-24 15:29:49,674 - INFO - 进度: 83/100 - 检查 shotcut
+2025-09-24 15:29:49,674 - INFO - 检查项目: shotcut
+2025-09-24 15:29:49,674 - WARNING - 未找到 shotcut 的构建指南文件
+2025-09-24 15:29:49,674 - INFO - 进度: 84/100 - 检查 simdjson
+2025-09-24 15:29:49,674 - INFO - 检查项目: simdjson
+2025-09-24 15:29:49,675 - WARNING - 未找到 simdjson 的构建指南文件
+2025-09-24 15:29:49,675 - INFO - 进度: 85/100 - 检查 soloud
+2025-09-24 15:29:49,675 - INFO - 检查项目: soloud
+2025-09-24 15:29:49,675 - WARNING - 未找到 soloud 的构建指南文件
+2025-09-24 15:29:49,675 - INFO - 进度: 86/100 - 检查 sonic-pi
+2025-09-24 15:29:49,675 - INFO - 检查项目: sonic-pi
+2025-09-24 15:29:49,675 - WARNING - 未找到 sonic-pi 的构建指南文件
+2025-09-24 15:29:49,675 - INFO - 进度: 87/100 - 检查 sqlitebrowser
+2025-09-24 15:29:49,675 - INFO - 检查项目: sqlitebrowser
+2025-09-24 15:29:49,676 - WARNING - 未找到 sqlitebrowser 的构建指南文件
+2025-09-24 15:29:49,676 - INFO - 进度: 88/100 - 检查 srs
+2025-09-24 15:29:49,676 - INFO - 检查项目: srs
+2025-09-24 15:29:49,676 - WARNING - 未找到 srs 的构建指南文件
+2025-09-24 15:29:49,676 - INFO - 进度: 89/100 - 检查 Stockfish
+2025-09-24 15:29:49,676 - INFO - 检查项目: Stockfish
+2025-09-24 15:29:49,676 - WARNING - 未找到 Stockfish 的构建指南文件
+2025-09-24 15:29:49,676 - INFO - 进度: 90/100 - 检查 tensorflow
+2025-09-24 15:29:49,677 - INFO - 检查项目: tensorflow
+2025-09-24 15:29:49,677 - WARNING - 未找到 tensorflow 的构建指南文件
+2025-09-24 15:29:49,677 - INFO - 进度: 91/100 - 检查 tesseract
+2025-09-24 15:29:49,677 - INFO - 检查项目: tesseract
+2025-09-24 15:29:49,677 - WARNING - 未找到 tesseract 的构建指南文件
+2025-09-24 15:29:49,677 - INFO - 进度: 92/100 - 检查 theora
+2025-09-24 15:29:49,677 - INFO - 检查项目: theora
+2025-09-24 15:29:53,394 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-24 15:29:53,396 - INFO - 进度: 93/100 - 检查 treefrog-framework
+2025-09-24 15:29:53,396 - INFO - 检查项目: treefrog-framework
+2025-09-24 15:29:53,396 - WARNING - 未找到 treefrog-framework 的构建指南文件
+2025-09-24 15:29:53,397 - INFO - 进度: 94/100 - 检查 userver
+2025-09-24 15:29:53,397 - INFO - 检查项目: userver
+2025-09-24 15:29:53,397 - WARNING - 未找到 userver 的构建指南文件
+2025-09-24 15:29:53,397 - INFO - 进度: 95/100 - 检查 vireo
+2025-09-24 15:29:53,397 - INFO - 检查项目: vireo
+2025-09-24 15:29:53,397 - WARNING - 未找到 vireo 的构建指南文件
+2025-09-24 15:29:53,397 - INFO - 进度: 96/100 - 检查 wav2letter
+2025-09-24 15:29:53,397 - INFO - 检查项目: wav2letter
+2025-09-24 15:29:53,398 - WARNING - 未找到 wav2letter 的构建指南文件
+2025-09-24 15:29:53,398 - INFO - 进度: 97/100 - 检查 webui
+2025-09-24 15:29:53,398 - INFO - 检查项目: webui
+2025-09-24 15:29:53,398 - WARNING - 未找到 webui 的构建指南文件
+2025-09-24 15:29:53,398 - INFO - 进度: 98/100 - 检查 x265
+2025-09-24 15:29:53,398 - INFO - 检查项目: x265
+2025-09-24 15:29:53,398 - WARNING - 未找到 x265 的构建指南文件
+2025-09-24 15:29:53,399 - INFO - 进度: 99/100 - 检查 xgboost
+2025-09-24 15:29:53,399 - INFO - 检查项目: xgboost
+2025-09-24 15:29:53,399 - WARNING - 未找到 xgboost 的构建指南文件
+2025-09-24 15:29:53,399 - INFO - 进度: 100/100 - 检查 xtd
+2025-09-24 15:29:53,399 - INFO - 检查项目: xtd
+2025-09-24 15:29:53,399 - WARNING - 未找到 xtd 的构建指南文件
+2025-09-24 15:29:53,401 - INFO - 报告已生成: build_check_report.md
+2025-09-24 15:29:53,403 - INFO - JSON 报告已生成: build_check_report.json
+2025-09-26 02:33:57,906 - INFO - 加载了 100 个项目
+2025-09-26 02:33:57,906 - INFO - 进度: 1/100 - 检查 8cc
+2025-09-26 02:33:57,906 - INFO - 检查项目: 8cc
+2025-09-26 02:34:01,733 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:01,751 - INFO - 进度: 2/100 - 检查 arangodb
+2025-09-26 02:34:01,751 - INFO - 检查项目: arangodb
+2025-09-26 02:34:05,614 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:05,615 - INFO - 进度: 3/100 - 检查 aseprite
+2025-09-26 02:34:05,615 - INFO - 检查项目: aseprite
+2025-09-26 02:34:07,983 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:07,985 - INFO - 进度: 4/100 - 检查 aubio
+2025-09-26 02:34:07,985 - INFO - 检查项目: aubio
+2025-09-26 02:34:12,264 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:12,266 - INFO - 进度: 5/100 - 检查 audioFlux
+2025-09-26 02:34:12,266 - INFO - 检查项目: audioFlux
+2025-09-26 02:34:14,905 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:14,907 - INFO - 进度: 6/100 - 检查 binutils-gdb
+2025-09-26 02:34:14,907 - INFO - 检查项目: binutils-gdb
+2025-09-26 02:34:17,651 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:17,652 - INFO - 进度: 7/100 - 检查 blender
+2025-09-26 02:34:17,652 - INFO - 检查项目: blender
+2025-09-26 02:34:20,717 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:20,719 - INFO - 进度: 8/100 - 检查 caffe
+2025-09-26 02:34:20,719 - INFO - 检查项目: caffe
+2025-09-26 02:34:23,768 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:23,770 - INFO - 进度: 9/100 - 检查 civetweb
+2025-09-26 02:34:23,770 - INFO - 检查项目: civetweb
+2025-09-26 02:34:26,654 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:26,656 - INFO - 进度: 10/100 - 检查 clang
+2025-09-26 02:34:26,656 - INFO - 检查项目: clang
+2025-09-26 02:34:29,497 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:29,499 - INFO - 进度: 11/100 - 检查 cocos2d-x
+2025-09-26 02:34:29,499 - INFO - 检查项目: cocos2d-x
+2025-09-26 02:34:35,161 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:35,163 - INFO - 进度: 12/100 - 检查 codeblocks
+2025-09-26 02:34:35,163 - INFO - 检查项目: codeblocks
+2025-09-26 02:34:38,245 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:38,246 - INFO - 进度: 13/100 - 检查 codelite
+2025-09-26 02:34:38,246 - INFO - 检查项目: codelite
+2025-09-26 02:34:45,037 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:45,039 - INFO - 进度: 14/100 - 检查 codon
+2025-09-26 02:34:45,039 - INFO - 检查项目: codon
+2025-09-26 02:34:47,948 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:47,950 - INFO - 进度: 15/100 - 检查 color_coded
+2025-09-26 02:34:47,950 - INFO - 检查项目: color_coded
+2025-09-26 02:34:50,656 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:50,658 - INFO - 进度: 16/100 - 检查 cpprestsdk
+2025-09-26 02:34:50,658 - INFO - 检查项目: cpprestsdk
+2025-09-26 02:34:53,531 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:53,533 - INFO - 进度: 17/100 - 检查 cquery
+2025-09-26 02:34:53,533 - INFO - 检查项目: cquery
+2025-09-26 02:34:56,407 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:56,409 - INFO - 进度: 18/100 - 检查 crow
+2025-09-26 02:34:56,410 - INFO - 检查项目: crow
+2025-09-26 02:34:59,511 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:34:59,513 - INFO - 进度: 19/100 - 检查 DearPyGui
+2025-09-26 02:34:59,513 - INFO - 检查项目: DearPyGui
+2025-09-26 02:35:02,253 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:02,255 - INFO - 进度: 20/100 - 检查 DOOM
+2025-09-26 02:35:02,255 - INFO - 检查项目: DOOM
+2025-09-26 02:35:04,716 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:04,717 - INFO - 进度: 21/100 - 检查 drogon
+2025-09-26 02:35:04,718 - INFO - 检查项目: drogon
+2025-09-26 02:35:07,244 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:07,246 - INFO - 进度: 22/100 - 检查 duckdb
+2025-09-26 02:35:07,246 - INFO - 检查项目: duckdb
+2025-09-26 02:35:10,348 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:10,350 - INFO - 进度: 23/100 - 检查 elements
+2025-09-26 02:35:10,350 - INFO - 检查项目: elements
+2025-09-26 02:35:13,295 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:13,297 - INFO - 进度: 24/100 - 检查 emacs-gdb
+2025-09-26 02:35:13,298 - INFO - 检查项目: emacs-gdb
+2025-09-26 02:35:15,783 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:15,785 - INFO - 进度: 25/100 - 检查 entt
+2025-09-26 02:35:15,786 - INFO - 检查项目: entt
+2025-09-26 02:35:17,927 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:17,929 - INFO - 进度: 26/100 - 检查 facil.io
+2025-09-26 02:35:17,929 - INFO - 检查项目: facil.io
+2025-09-26 02:35:20,379 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:20,381 - INFO - 进度: 27/100 - 检查 FFmpeg
+2025-09-26 02:35:20,381 - INFO - 检查项目: FFmpeg
+2025-09-26 02:35:23,029 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:23,031 - INFO - 进度: 28/100 - 检查 flameshot
+2025-09-26 02:35:23,031 - INFO - 检查项目: flameshot
+2025-09-26 02:35:27,190 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:27,191 - INFO - 进度: 29/100 - 检查 foundationdb
+2025-09-26 02:35:27,192 - INFO - 检查项目: foundationdb
+2025-09-26 02:35:30,789 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:30,791 - INFO - 进度: 30/100 - 检查 gameplay
+2025-09-26 02:35:30,791 - INFO - 检查项目: gameplay
+2025-09-26 02:35:33,569 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:33,571 - INFO - 进度: 31/100 - 检查 gcc
+2025-09-26 02:35:33,571 - INFO - 检查项目: gcc
+2025-09-26 02:35:36,864 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:36,865 - INFO - 进度: 32/100 - 检查 geany
+2025-09-26 02:35:36,866 - INFO - 检查项目: geany
+2025-09-26 02:35:39,875 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:39,877 - INFO - 进度: 33/100 - 检查 godot
+2025-09-26 02:35:39,877 - INFO - 检查项目: godot
+2025-09-26 02:35:42,256 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:42,258 - INFO - 进度: 34/100 - 检查 gpt4all
+2025-09-26 02:35:42,258 - INFO - 检查项目: gpt4all
+2025-09-26 02:35:45,083 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:45,084 - INFO - 进度: 35/100 - 检查 guetzli
+2025-09-26 02:35:45,084 - INFO - 检查项目: guetzli
+2025-09-26 02:35:47,393 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:47,395 - INFO - 进度: 36/100 - 检查 irony-mode
+2025-09-26 02:35:47,395 - INFO - 检查项目: irony-mode
+2025-09-26 02:35:49,683 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:49,684 - INFO - 进度: 37/100 - 检查 jucipp
+2025-09-26 02:35:49,685 - INFO - 检查项目: jucipp
+2025-09-26 02:35:52,381 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:52,383 - INFO - 进度: 38/100 - 检查 kvrocks
+2025-09-26 02:35:52,383 - INFO - 检查项目: kvrocks
+2025-09-26 02:35:55,177 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:55,179 - INFO - 进度: 39/100 - 检查 leveldb
+2025-09-26 02:35:55,179 - INFO - 检查项目: leveldb
+2025-09-26 02:35:58,640 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:35:58,641 - INFO - 进度: 40/100 - 检查 libde265
+2025-09-26 02:35:58,642 - INFO - 检查项目: libde265
+2025-09-26 02:36:00,825 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:00,827 - INFO - 进度: 41/100 - 检查 libfacedetection
+2025-09-26 02:36:00,828 - INFO - 检查项目: libfacedetection
+2025-09-26 02:36:04,435 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:04,437 - INFO - 进度: 42/100 - 检查 libjpeg-turbo
+2025-09-26 02:36:04,437 - INFO - 检查项目: libjpeg-turbo
+2025-09-26 02:36:06,797 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:06,799 - INFO - 进度: 43/100 - 检查 libjxl
+2025-09-26 02:36:06,799 - INFO - 检查项目: libjxl
+2025-09-26 02:36:09,384 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:09,386 - INFO - 进度: 44/100 - 检查 libsndfile
+2025-09-26 02:36:09,386 - INFO - 检查项目: libsndfile
+2025-09-26 02:36:12,075 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:12,077 - INFO - 进度: 45/100 - 检查 libsoundio
+2025-09-26 02:36:12,077 - INFO - 检查项目: libsoundio
+2025-09-26 02:36:15,020 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:15,022 - INFO - 进度: 46/100 - 检查 libui
+2025-09-26 02:36:15,023 - INFO - 检查项目: libui
+2025-09-26 02:36:19,358 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:19,361 - INFO - 进度: 47/100 - 检查 libvpx
+2025-09-26 02:36:19,361 - INFO - 检查项目: libvpx
+2025-09-26 02:36:24,540 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:24,542 - INFO - 进度: 48/100 - 检查 linux
+2025-09-26 02:36:24,542 - INFO - 检查项目: linux
+2025-09-26 02:36:27,920 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:27,921 - INFO - 进度: 49/100 - 检查 llama.cpp
+2025-09-26 02:36:27,922 - INFO - 检查项目: llama.cpp
+2025-09-26 02:36:30,208 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:30,209 - INFO - 进度: 50/100 - 检查 luanti
+2025-09-26 02:36:30,210 - INFO - 检查项目: luanti
+2025-09-26 02:36:33,107 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:33,109 - INFO - 进度: 51/100 - 检查 lwan
+2025-09-26 02:36:33,109 - INFO - 检查项目: lwan
+2025-09-26 02:36:39,502 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:39,504 - INFO - 进度: 52/100 - 检查 mediapipe
+2025-09-26 02:36:39,504 - INFO - 检查项目: mediapipe
+2025-09-26 02:36:42,669 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:42,671 - INFO - 进度: 53/100 - 检查 mold
+2025-09-26 02:36:42,671 - INFO - 检查项目: mold
+2025-09-26 02:36:47,095 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:47,098 - INFO - 进度: 54/100 - 检查 mongo
+2025-09-26 02:36:47,098 - INFO - 检查项目: mongo
+2025-09-26 02:36:50,217 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:50,219 - INFO - 进度: 55/100 - 检查 mozjpeg
+2025-09-26 02:36:50,219 - INFO - 检查项目: mozjpeg
+2025-09-26 02:36:52,420 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:52,422 - INFO - 进度: 56/100 - 检查 MuseScore
+2025-09-26 02:36:52,422 - INFO - 检查项目: MuseScore
+2025-09-26 02:36:56,709 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:56,711 - INFO - 进度: 57/100 - 检查 mxnet
+2025-09-26 02:36:56,711 - INFO - 检查项目: mxnet
+2025-09-26 02:36:59,975 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:36:59,977 - INFO - 进度: 58/100 - 检查 nanogui
+2025-09-26 02:36:59,977 - INFO - 检查项目: nanogui
+2025-09-26 02:37:02,595 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:02,597 - INFO - 进度: 59/100 - 检查 oatpp
+2025-09-26 02:37:02,597 - INFO - 检查项目: oatpp
+2025-09-26 02:37:05,143 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:05,144 - INFO - 进度: 60/100 - 检查 openalpr
+2025-09-26 02:37:05,144 - INFO - 检查项目: openalpr
+2025-09-26 02:37:08,409 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:08,411 - INFO - 进度: 61/100 - 检查 opencv
+2025-09-26 02:37:08,411 - INFO - 检查项目: opencv
+2025-09-26 02:37:11,712 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:11,714 - INFO - 进度: 62/100 - 检查 openFrameworks
+2025-09-26 02:37:11,714 - INFO - 检查项目: openFrameworks
+2025-09-26 02:37:14,918 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:14,920 - INFO - 进度: 63/100 - 检查 openh264
+2025-09-26 02:37:14,920 - INFO - 检查项目: openh264
+2025-09-26 02:37:20,151 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:20,153 - INFO - 进度: 64/100 - 检查 openpose
+2025-09-26 02:37:20,153 - INFO - 检查项目: openpose
+2025-09-26 02:37:22,994 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:22,996 - INFO - 进度: 65/100 - 检查 OpenRCT2
+2025-09-26 02:37:22,996 - INFO - 检查项目: OpenRCT2
+2025-09-26 02:37:25,938 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:25,940 - INFO - 进度: 66/100 - 检查 Paddle
+2025-09-26 02:37:25,941 - INFO - 检查项目: Paddle
+2025-09-26 02:37:29,751 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:29,753 - INFO - 进度: 67/100 - 检查 pistache
+2025-09-26 02:37:29,754 - INFO - 检查项目: pistache
+2025-09-26 02:37:32,391 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:32,393 - INFO - 进度: 68/100 - 检查 polybar
+2025-09-26 02:37:32,393 - INFO - 检查项目: polybar
+2025-09-26 02:37:34,726 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:34,727 - INFO - 进度: 69/100 - 检查 qt-creator
+2025-09-26 02:37:34,728 - INFO - 检查项目: qt-creator
+2025-09-26 02:37:38,097 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:38,099 - INFO - 进度: 70/100 - 检查 Qv2ray
+2025-09-26 02:37:38,099 - INFO - 检查项目: Qv2ray
+2025-09-26 02:37:40,799 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:40,802 - INFO - 进度: 71/100 - 检查 raylib
+2025-09-26 02:37:40,802 - INFO - 检查项目: raylib
+2025-09-26 02:37:43,821 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:43,823 - INFO - 进度: 72/100 - 检查 reactos
+2025-09-26 02:37:43,823 - INFO - 检查项目: reactos
+2025-09-26 02:37:46,708 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:46,710 - INFO - 进度: 73/100 - 检查 rethinkdb
+2025-09-26 02:37:46,710 - INFO - 检查项目: rethinkdb
+2025-09-26 02:37:49,504 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:49,506 - INFO - 进度: 74/100 - 检查 RmlUi
+2025-09-26 02:37:49,506 - INFO - 检查项目: RmlUi
+2025-09-26 02:37:51,969 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:51,971 - INFO - 进度: 75/100 - 检查 rnnoise
+2025-09-26 02:37:51,971 - INFO - 检查项目: rnnoise
+2025-09-26 02:37:54,171 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:54,173 - INFO - 进度: 76/100 - 检查 rocksdb
+2025-09-26 02:37:54,173 - INFO - 检查项目: rocksdb
+2025-09-26 02:37:57,505 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:37:57,507 - INFO - 进度: 77/100 - 检查 rpcs3
+2025-09-26 02:37:57,507 - INFO - 检查项目: rpcs3
+2025-09-26 02:38:01,323 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:01,325 - INFO - 进度: 78/100 - 检查 rtags
+2025-09-26 02:38:01,325 - INFO - 检查项目: rtags
+2025-09-26 02:38:04,597 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:04,599 - INFO - 进度: 79/100 - 检查 rt-thread
+2025-09-26 02:38:04,599 - INFO - 检查项目: rt-thread
+2025-09-26 02:38:07,036 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:07,038 - INFO - 进度: 80/100 - 检查 scylladb
+2025-09-26 02:38:07,039 - INFO - 检查项目: scylladb
+2025-09-26 02:38:09,562 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:09,564 - INFO - 进度: 81/100 - 检查 seq
+2025-09-26 02:38:09,564 - INFO - 检查项目: seq
+2025-09-26 02:38:12,596 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:12,598 - INFO - 进度: 82/100 - 检查 serenity
+2025-09-26 02:38:12,598 - INFO - 检查项目: serenity
+2025-09-26 02:38:15,023 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:15,025 - INFO - 进度: 83/100 - 检查 shotcut
+2025-09-26 02:38:15,026 - INFO - 检查项目: shotcut
+2025-09-26 02:38:17,825 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:17,827 - INFO - 进度: 84/100 - 检查 simdjson
+2025-09-26 02:38:17,827 - INFO - 检查项目: simdjson
+2025-09-26 02:38:20,581 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:20,583 - INFO - 进度: 85/100 - 检查 soloud
+2025-09-26 02:38:20,583 - INFO - 检查项目: soloud
+2025-09-26 02:38:24,020 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:24,022 - INFO - 进度: 86/100 - 检查 sonic-pi
+2025-09-26 02:38:24,023 - INFO - 检查项目: sonic-pi
+2025-09-26 02:38:27,813 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:27,815 - INFO - 进度: 87/100 - 检查 sqlitebrowser
+2025-09-26 02:38:27,815 - INFO - 检查项目: sqlitebrowser
+2025-09-26 02:38:30,057 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:30,059 - INFO - 进度: 88/100 - 检查 srs
+2025-09-26 02:38:30,059 - INFO - 检查项目: srs
+2025-09-26 02:38:33,786 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:33,788 - INFO - 进度: 89/100 - 检查 Stockfish
+2025-09-26 02:38:33,788 - INFO - 检查项目: Stockfish
+2025-09-26 02:38:35,952 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:35,954 - INFO - 进度: 90/100 - 检查 tensorflow
+2025-09-26 02:38:35,954 - INFO - 检查项目: tensorflow
+2025-09-26 02:38:39,125 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:39,127 - INFO - 进度: 91/100 - 检查 tesseract
+2025-09-26 02:38:39,127 - INFO - 检查项目: tesseract
+2025-09-26 02:38:41,467 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:41,469 - INFO - 进度: 92/100 - 检查 theora
+2025-09-26 02:38:41,469 - INFO - 检查项目: theora
+2025-09-26 02:38:43,668 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:43,669 - INFO - 进度: 93/100 - 检查 treefrog-framework
+2025-09-26 02:38:43,669 - INFO - 检查项目: treefrog-framework
+2025-09-26 02:38:46,303 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:46,305 - INFO - 进度: 94/100 - 检查 userver
+2025-09-26 02:38:46,305 - INFO - 检查项目: userver
+2025-09-26 02:38:48,873 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:48,874 - INFO - 进度: 95/100 - 检查 vireo
+2025-09-26 02:38:48,875 - INFO - 检查项目: vireo
+2025-09-26 02:38:52,304 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:52,306 - INFO - 进度: 96/100 - 检查 wav2letter
+2025-09-26 02:38:52,306 - INFO - 检查项目: wav2letter
+2025-09-26 02:38:55,126 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:55,128 - INFO - 进度: 97/100 - 检查 webui
+2025-09-26 02:38:55,128 - INFO - 检查项目: webui
+2025-09-26 02:38:57,527 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:38:57,529 - INFO - 进度: 98/100 - 检查 x265
+2025-09-26 02:38:57,529 - INFO - 检查项目: x265
+2025-09-26 02:39:00,478 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:39:00,481 - INFO - 进度: 99/100 - 检查 xgboost
+2025-09-26 02:39:00,481 - INFO - 检查项目: xgboost
+2025-09-26 02:39:03,089 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:39:03,091 - INFO - 进度: 100/100 - 检查 xtd
+2025-09-26 02:39:03,091 - INFO - 检查项目: xtd
+2025-09-26 02:39:05,841 - INFO - HTTP Request: POST http://localhost:4141/chat/completions "HTTP/1.1 200 "
+2025-09-26 02:39:05,845 - INFO - 报告已生成: build_check_report.md
+2025-09-26 02:39:05,852 - INFO - JSON 报告已生成: build_check_report.json

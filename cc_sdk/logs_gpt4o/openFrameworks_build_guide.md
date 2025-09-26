@@ -1,0 +1,1 @@
+The build system uses Make, with detailed guidelines available for ensuring compilation success, including dependencies, environment settings, and troubleshooting. Moving next would be to create the guide for the build process.

@@ -1,0 +1,1 @@
+I’ve outlined the steps needed to complete this task. Starting with researching and writing the source-based compilation guide tailored to your operating system. Let me begin working on the first task.

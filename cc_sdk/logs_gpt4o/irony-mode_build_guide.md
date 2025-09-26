@@ -1,0 +1,1 @@
+I've compiled a comprehensive guide for source-based compilation on Linux systems. Let me know if you'd like it displayed or specific details extracted. Next, I'll proceed with setting up dependencies.

@@ -1,0 +1,1 @@
+I’ve prepared a comprehensive source-based compilation guide for Linux, including dependencies, build steps, troubleshooting, and best practices. Let me know if you'd like to proceed or customize it further.

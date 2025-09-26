@@ -1,0 +1,1 @@
+I have researched and drafted a detailed source-based build guide tailored to this Linux system. It includes steps for dependency installation, compilation, and verification. Let me know when you'd like me to proceed to the next steps of the process.

@@ -1,0 +1,1 @@
+I've completed research into creating a source-based build guide and prepared a detailed plan focusing on requirements, dependencies, build commands, and troubleshooting for Linux environments. Let me know if you'd like an overview of this plan before proceeding with dependency installation.

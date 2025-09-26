@@ -1,0 +1,1 @@
+I've prepared a comprehensive compilation guide tailored to your Linux system. It includes dependency information, build steps, error handling tips, and performance optimizations. Let me know when ready to proceed with dependency installation!

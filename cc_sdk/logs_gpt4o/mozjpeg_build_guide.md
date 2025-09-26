@@ -1,0 +1,1 @@
+I've compiled a detailed source-based build guide for Linux and added it to the task list. I’ll now proceed with consecutive steps of dependency installation, source code compilation, and validating the build. Let me know if adjustments are needed.

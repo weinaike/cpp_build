@@ -1,0 +1,1 @@
+I’ve created a detailed guide for compiling libde265 from source on the current Linux system, including system checks, dependency installation, and both Autotools and CMake build instructions. Let me know if you’d like to proceed step by step based on this guide!

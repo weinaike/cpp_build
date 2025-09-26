@@ -1,0 +1,443 @@
+开始处理项目列表，时间：Thu Sep 25 20:06:36 CST 2025
+处理项目范围: 第 1 到第 100 个项目
+正在处理项目 [1/100]: 8cc
+项目 8cc 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 8cc 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/8cc_build_guide.md
+----------------------------------------
+正在处理项目 [2/100]: arangodb
+项目 arangodb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 arangodb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/arangodb_build_guide.md
+----------------------------------------
+正在处理项目 [3/100]: aseprite
+项目 aseprite 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 aseprite 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/aseprite_build_guide.md
+----------------------------------------
+正在处理项目 [4/100]: aubio
+项目 aubio 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 aubio 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/aubio_build_guide.md
+----------------------------------------
+正在处理项目 [5/100]: audioFlux
+项目 audioFlux 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 audioFlux 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/audioFlux_build_guide.md
+----------------------------------------
+正在处理项目 [6/100]: binutils-gdb
+项目 binutils-gdb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 binutils-gdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/binutils-gdb_build_guide.md
+----------------------------------------
+正在处理项目 [7/100]: blender
+项目 blender 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 blender 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/blender_build_guide.md
+----------------------------------------
+正在处理项目 [8/100]: caffe
+项目 caffe 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 caffe 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/caffe_build_guide.md
+----------------------------------------
+正在处理项目 [9/100]: civetweb
+项目 civetweb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 civetweb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/civetweb_build_guide.md
+----------------------------------------
+正在处理项目 [10/100]: clang
+项目 clang 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 clang 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/clang_build_guide.md
+----------------------------------------
+正在处理项目 [11/100]: cocos2d-x
+项目 cocos2d-x 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 cocos2d-x 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/cocos2d-x_build_guide.md
+----------------------------------------
+正在处理项目 [12/100]: codeblocks
+项目 codeblocks 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 codeblocks 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/codeblocks_build_guide.md
+----------------------------------------
+正在处理项目 [13/100]: codelite
+项目 codelite 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 codelite 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/codelite_build_guide.md
+----------------------------------------
+正在处理项目 [14/100]: codon
+项目 codon 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 codon 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/codon_build_guide.md
+----------------------------------------
+正在处理项目 [15/100]: color_coded
+项目 color_coded 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 color_coded 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/color_coded_build_guide.md
+----------------------------------------
+正在处理项目 [16/100]: cpprestsdk
+项目 cpprestsdk 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 cpprestsdk 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/cpprestsdk_build_guide.md
+----------------------------------------
+正在处理项目 [17/100]: cquery
+项目 cquery 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 cquery 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/cquery_build_guide.md
+----------------------------------------
+正在处理项目 [18/100]: crow
+项目 crow 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 crow 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/crow_build_guide.md
+----------------------------------------
+正在处理项目 [19/100]: DearPyGui
+项目 DearPyGui 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 DearPyGui 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/DearPyGui_build_guide.md
+----------------------------------------
+正在处理项目 [20/100]: DOOM
+项目 DOOM 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 DOOM 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/DOOM_build_guide.md
+----------------------------------------
+正在处理项目 [21/100]: drogon
+项目 drogon 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 drogon 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/drogon_build_guide.md
+----------------------------------------
+正在处理项目 [22/100]: duckdb
+项目 duckdb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 duckdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/duckdb_build_guide.md
+----------------------------------------
+正在处理项目 [23/100]: elements
+项目 elements 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 elements 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/elements_build_guide.md
+----------------------------------------
+正在处理项目 [24/100]: emacs-gdb
+项目 emacs-gdb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 emacs-gdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/emacs-gdb_build_guide.md
+----------------------------------------
+正在处理项目 [25/100]: entt
+项目 entt 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 entt 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/entt_build_guide.md
+----------------------------------------
+正在处理项目 [26/100]: facil.io
+项目 facil.io 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 facil.io 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/facil.io_build_guide.md
+----------------------------------------
+正在处理项目 [27/100]: FFmpeg
+项目 FFmpeg 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 FFmpeg 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/FFmpeg_build_guide.md
+----------------------------------------
+正在处理项目 [28/100]: flameshot
+项目 flameshot 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 flameshot 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/flameshot_build_guide.md
+----------------------------------------
+正在处理项目 [29/100]: foundationdb
+项目 foundationdb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 foundationdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/foundationdb_build_guide.md
+----------------------------------------
+正在处理项目 [30/100]: gameplay
+项目 gameplay 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 gameplay 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/gameplay_build_guide.md
+----------------------------------------
+正在处理项目 [31/100]: gcc
+项目 gcc 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 gcc 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/gcc_build_guide.md
+----------------------------------------
+正在处理项目 [32/100]: geany
+项目 geany 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 geany 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/geany_build_guide.md
+----------------------------------------
+正在处理项目 [33/100]: godot
+项目 godot 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 godot 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/godot_build_guide.md
+----------------------------------------
+正在处理项目 [34/100]: gpt4all
+项目 gpt4all 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 gpt4all 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/gpt4all_build_guide.md
+----------------------------------------
+正在处理项目 [35/100]: guetzli
+项目 guetzli 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 guetzli 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/guetzli_build_guide.md
+----------------------------------------
+正在处理项目 [36/100]: irony-mode
+项目 irony-mode 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 irony-mode 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/irony-mode_build_guide.md
+----------------------------------------
+正在处理项目 [37/100]: jucipp
+项目 jucipp 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 jucipp 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/jucipp_build_guide.md
+----------------------------------------
+正在处理项目 [38/100]: kvrocks
+项目 kvrocks 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 kvrocks 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/kvrocks_build_guide.md
+----------------------------------------
+正在处理项目 [39/100]: leveldb
+项目 leveldb 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 leveldb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/leveldb_build_guide.md
+----------------------------------------
+正在处理项目 [40/100]: libde265
+项目 libde265 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libde265 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libde265_build_guide.md
+----------------------------------------
+正在处理项目 [41/100]: libfacedetection
+项目 libfacedetection 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libfacedetection 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libfacedetection_build_guide.md
+----------------------------------------
+正在处理项目 [42/100]: libjpeg-turbo
+项目 libjpeg-turbo 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libjpeg-turbo 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libjpeg-turbo_build_guide.md
+----------------------------------------
+正在处理项目 [43/100]: libjxl
+项目 libjxl 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libjxl 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libjxl_build_guide.md
+----------------------------------------
+正在处理项目 [44/100]: libsndfile
+项目 libsndfile 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libsndfile 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libsndfile_build_guide.md
+----------------------------------------
+正在处理项目 [45/100]: libsoundio
+项目 libsoundio 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libsoundio 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libsoundio_build_guide.md
+----------------------------------------
+正在处理项目 [46/100]: libui
+项目 libui 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libui 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libui_build_guide.md
+----------------------------------------
+正在处理项目 [47/100]: libvpx
+项目 libvpx 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 libvpx 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/libvpx_build_guide.md
+----------------------------------------
+正在处理项目 [48/100]: linux
+项目 linux 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 linux 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/linux_build_guide.md
+----------------------------------------
+正在处理项目 [49/100]: llama.cpp
+项目 llama.cpp 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 llama.cpp 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/llama.cpp_build_guide.md
+----------------------------------------
+正在处理项目 [50/100]: luanti
+项目 luanti 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 luanti 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/luanti_build_guide.md
+----------------------------------------
+正在处理项目 [51/100]: lwan
+项目 lwan 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 lwan 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/lwan_build_guide.md
+----------------------------------------
+正在处理项目 [52/100]: mediapipe
+项目 mediapipe 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 mediapipe 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/mediapipe_build_guide.md
+----------------------------------------
+正在处理项目 [53/100]: mold
+项目 mold 开始时间：Thu Sep 25 20:06:36 CST 2025
+项目 mold 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/mold_build_guide.md
+----------------------------------------
+正在处理项目 [54/100]: mongo
+项目 mongo 开始时间：Thu Sep 25 20:06:36 CST 2025
+已切换到目录: /home/wnk/cc_projects/mongo
+检测到git仓库，正在重置到初始状态...
+HEAD is now at f89305669 SERVER-107015 Ensure that DropDatabaseCoordinator stops migrations on the next collection to be dropped before persisting its identity (#38044)
+git reset --hard HEAD 执行成功
+git clean -fd 执行成功
+开始为项目 mongo 生成构建指南...
+项目 mongo 处理完成，输出保存到: /home/wnk/cc_sdk/logs/mongo_build_guide.md
+项目 mongo 结束时间：Fri Sep 26 00:42:23 CST 2025
+项目 mongo 执行时长：16547 秒 (275.78 分钟)
+----------------------------------------
+正在处理项目 [55/100]: mozjpeg
+项目 mozjpeg 开始时间：Fri Sep 26 00:42:23 CST 2025
+项目 mozjpeg 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/mozjpeg_build_guide.md
+----------------------------------------
+正在处理项目 [56/100]: MuseScore
+项目 MuseScore 开始时间：Fri Sep 26 00:42:23 CST 2025
+项目 MuseScore 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/MuseScore_build_guide.md
+----------------------------------------
+正在处理项目 [57/100]: mxnet
+项目 mxnet 开始时间：Fri Sep 26 00:42:23 CST 2025
+项目 mxnet 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/mxnet_build_guide.md
+----------------------------------------
+正在处理项目 [58/100]: nanogui
+项目 nanogui 开始时间：Fri Sep 26 00:42:23 CST 2025
+项目 nanogui 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/nanogui_build_guide.md
+----------------------------------------
+正在处理项目 [59/100]: oatpp
+项目 oatpp 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 oatpp 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/oatpp_build_guide.md
+----------------------------------------
+正在处理项目 [60/100]: openalpr
+项目 openalpr 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 openalpr 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/openalpr_build_guide.md
+----------------------------------------
+正在处理项目 [61/100]: opencv
+项目 opencv 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 opencv 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/opencv_build_guide.md
+----------------------------------------
+正在处理项目 [62/100]: openFrameworks
+项目 openFrameworks 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 openFrameworks 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/openFrameworks_build_guide.md
+----------------------------------------
+正在处理项目 [63/100]: openh264
+项目 openh264 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 openh264 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/openh264_build_guide.md
+----------------------------------------
+正在处理项目 [64/100]: openpose
+项目 openpose 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 openpose 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/openpose_build_guide.md
+----------------------------------------
+正在处理项目 [65/100]: OpenRCT2
+项目 OpenRCT2 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 OpenRCT2 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/OpenRCT2_build_guide.md
+----------------------------------------
+正在处理项目 [66/100]: Paddle
+项目 Paddle 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 Paddle 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/Paddle_build_guide.md
+----------------------------------------
+正在处理项目 [67/100]: pistache
+项目 pistache 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 pistache 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/pistache_build_guide.md
+----------------------------------------
+正在处理项目 [68/100]: polybar
+项目 polybar 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 polybar 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/polybar_build_guide.md
+----------------------------------------
+正在处理项目 [69/100]: qt-creator
+项目 qt-creator 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 qt-creator 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/qt-creator_build_guide.md
+----------------------------------------
+正在处理项目 [70/100]: Qv2ray
+项目 Qv2ray 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 Qv2ray 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/Qv2ray_build_guide.md
+----------------------------------------
+正在处理项目 [71/100]: raylib
+项目 raylib 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 raylib 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/raylib_build_guide.md
+----------------------------------------
+正在处理项目 [72/100]: reactos
+项目 reactos 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 reactos 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/reactos_build_guide.md
+----------------------------------------
+正在处理项目 [73/100]: rethinkdb
+项目 rethinkdb 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 rethinkdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/rethinkdb_build_guide.md
+----------------------------------------
+正在处理项目 [74/100]: RmlUi
+项目 RmlUi 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 RmlUi 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/RmlUi_build_guide.md
+----------------------------------------
+正在处理项目 [75/100]: rnnoise
+项目 rnnoise 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 rnnoise 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/rnnoise_build_guide.md
+----------------------------------------
+正在处理项目 [76/100]: rocksdb
+项目 rocksdb 开始时间：Fri Sep 26 00:42:24 CST 2025
+项目 rocksdb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/rocksdb_build_guide.md
+----------------------------------------
+正在处理项目 [77/100]: rpcs3
+项目 rpcs3 开始时间：Fri Sep 26 00:42:24 CST 2025
+已切换到目录: /home/wnk/cc_projects/rpcs3
+检测到git仓库，正在重置到初始状态...
+HEAD is now at 4615032 cellVdec: log uknown arguments instead of throwing an error
+git reset --hard HEAD 执行成功
+Removing RPCS3_Ubuntu_Build_Guide.md
+git clean -fd 执行成功
+开始为项目 rpcs3 生成构建指南...
+项目 rpcs3 处理完成，输出保存到: /home/wnk/cc_sdk/logs/rpcs3_build_guide.md
+项目 rpcs3 结束时间：Fri Sep 26 01:23:21 CST 2025
+项目 rpcs3 执行时长：2457 秒 (40.95 分钟)
+----------------------------------------
+正在处理项目 [78/100]: rtags
+项目 rtags 开始时间：Fri Sep 26 01:23:21 CST 2025
+项目 rtags 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/rtags_build_guide.md
+----------------------------------------
+正在处理项目 [79/100]: rt-thread
+项目 rt-thread 开始时间：Fri Sep 26 01:23:21 CST 2025
+项目 rt-thread 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/rt-thread_build_guide.md
+----------------------------------------
+正在处理项目 [80/100]: scylladb
+项目 scylladb 开始时间：Fri Sep 26 01:23:21 CST 2025
+项目 scylladb 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/scylladb_build_guide.md
+----------------------------------------
+正在处理项目 [81/100]: seq
+项目 seq 开始时间：Fri Sep 26 01:23:21 CST 2025
+项目 seq 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/seq_build_guide.md
+----------------------------------------
+正在处理项目 [82/100]: serenity
+项目 serenity 开始时间：Fri Sep 26 01:23:21 CST 2025
+已切换到目录: /home/wnk/cc_projects/serenity
+检测到git仓库，正在重置到初始状态...
+HEAD is now at d7416524 LibPDF: Shorten Renderer::set_blend_mode() a bit with an IIFE
+git reset --hard HEAD 执行成功
+git clean -fd 执行成功
+开始为项目 serenity 生成构建指南...
+项目 serenity 处理完成，输出保存到: /home/wnk/cc_sdk/logs/serenity_build_guide.md
+项目 serenity 结束时间：Fri Sep 26 01:36:24 CST 2025
+项目 serenity 执行时长：783 秒 (13.05 分钟)
+----------------------------------------
+正在处理项目 [83/100]: shotcut
+项目 shotcut 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 shotcut 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/shotcut_build_guide.md
+----------------------------------------
+正在处理项目 [84/100]: simdjson
+项目 simdjson 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 simdjson 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/simdjson_build_guide.md
+----------------------------------------
+正在处理项目 [85/100]: soloud
+项目 soloud 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 soloud 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/soloud_build_guide.md
+----------------------------------------
+正在处理项目 [86/100]: sonic-pi
+项目 sonic-pi 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 sonic-pi 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/sonic-pi_build_guide.md
+----------------------------------------
+正在处理项目 [87/100]: sqlitebrowser
+项目 sqlitebrowser 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 sqlitebrowser 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/sqlitebrowser_build_guide.md
+----------------------------------------
+正在处理项目 [88/100]: srs
+项目 srs 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 srs 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/srs_build_guide.md
+----------------------------------------
+正在处理项目 [89/100]: Stockfish
+项目 Stockfish 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 Stockfish 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/Stockfish_build_guide.md
+----------------------------------------
+正在处理项目 [90/100]: tensorflow
+项目 tensorflow 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 tensorflow 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/tensorflow_build_guide.md
+----------------------------------------
+正在处理项目 [91/100]: tesseract
+项目 tesseract 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 tesseract 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/tesseract_build_guide.md
+----------------------------------------
+正在处理项目 [92/100]: theora
+项目 theora 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 theora 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/theora_build_guide.md
+----------------------------------------
+正在处理项目 [93/100]: treefrog-framework
+项目 treefrog-framework 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 treefrog-framework 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/treefrog-framework_build_guide.md
+----------------------------------------
+正在处理项目 [94/100]: userver
+项目 userver 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 userver 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/userver_build_guide.md
+----------------------------------------
+正在处理项目 [95/100]: vireo
+项目 vireo 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 vireo 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/vireo_build_guide.md
+----------------------------------------
+正在处理项目 [96/100]: wav2letter
+项目 wav2letter 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 wav2letter 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/wav2letter_build_guide.md
+----------------------------------------
+正在处理项目 [97/100]: webui
+项目 webui 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 webui 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/webui_build_guide.md
+----------------------------------------
+正在处理项目 [98/100]: x265
+项目 x265 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 x265 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/x265_build_guide.md
+----------------------------------------
+正在处理项目 [99/100]: xgboost
+项目 xgboost 开始时间：Fri Sep 26 01:36:24 CST 2025
+项目 xgboost 的输出文件已存在，跳过处理: /home/wnk/cc_sdk/logs/xgboost_build_guide.md
+----------------------------------------
+正在处理项目 [100/100]: xtd
+项目 xtd 开始时间：Fri Sep 26 01:36:24 CST 2025
+已切换到目录: /home/wnk/cc_projects/xtd
+检测到git仓库，正在重置到初始状态...
+HEAD is now at f78be4940 Apply astyle formatting via GitHub Action
+git reset --hard HEAD 执行成功
+Removing LINUX_BUILD_GUIDE.md
+Removing fix_all_color_files.py
+Removing fix_system_images.py
+Removing wxWidgets-3.2.5/src/tiff/aclocal.m4
+Removing wxWidgets-3.2.5/src/tiff/libtiff/
+Removing wxWidgets-3.2.5/src/tiff/m4/
+git clean -fd 执行成功
+开始为项目 xtd 生成构建指南...
+项目 xtd 处理完成，输出保存到: /home/wnk/cc_sdk/logs/xtd_build_guide.md
+项目 xtd 结束时间：Fri Sep 26 02:21:15 CST 2025
+项目 xtd 执行时长：2691 秒 (44.85 分钟)
+----------------------------------------
+所有项目处理完成，时间：Fri Sep 26 02:21:15 CST 2025
+总体执行时长：22479 秒 (374.65 分钟)
