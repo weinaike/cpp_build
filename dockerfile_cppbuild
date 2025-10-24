@@ -8,8 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # 配置镜像源和安装基础包（合并减少层数）
 RUN apt-get update && \
     apt-get install -y ca-certificates && \
-    sed -i 's|http://archive.ubuntu.com/ubuntu/|http://mirrors.aliyun.com/ubuntu/|g' /etc/apt/sources.list && \
-    sed -i 's|http://security.ubuntu.com/ubuntu/|http://mirrors.aliyun.com/ubuntu/|g' /etc/apt/sources.list && \
+    sed -i 's|http://archive.ubuntu.com/ubuntu/|https://mirrors.ustc.edu.cn/ubuntu/|g' /etc/apt/sources.list && \
+    sed -i 's|http://security.ubuntu.com/ubuntu/|https://mirrors.ustc.edu.cn/ubuntu/|g' /etc/apt/sources.list && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
         # 基础工具
@@ -40,8 +40,8 @@ RUN wget -O node.tar.xz https://registry.npmmirror.com/-/binary/node/latest-v22.
 RUN node -v && npm -v && npm config set registry https://registry.npmmirror.com
 
 # 配置pip镜像源和安装Python包
-RUN pip3 config set global.index-url http://mirrors.aliyun.com/pypi/simple/ && \
-    pip3 config set global.trusted-host mirrors.aliyun.com && \
+RUN pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && \
+    pip3 config set global.trusted-host pypi.tuna.tsinghua.edu.cn && \
     python3 -m pip install --upgrade pip
 
 

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "command": {
+      "command": "node",
+      "args": ["/home/wnk/code/DesktopCommanderMCP/dist/index.js"],
+      "read_timeout_seconds": 600
+    }
+  },
+  "allowedMcpServers": ["command"]
+}

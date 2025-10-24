@@ -1,1 +1,13 @@
 mcps/
+__pycache__
+logs/
+*.log
+workspace/
+iter_agent_gpt4o
+summary/
+summary_*/
+logs_*/
+projects/
+.env
+.vscode/
+.
