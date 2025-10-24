@@ -150,7 +150,7 @@ async def download_history(project_id, session_id=None, agent_name="cpp_builder"
     if session_id is None:
         session_id = str(uuid.uuid4())
     param= SessionParam(
-            project_id=project_id,
+            project_id=f'{project_id}_2',
             session_id=session_id,
             api_url="http://localhost/api",
             timeout=30
@@ -196,39 +196,33 @@ async def call_llm(messages:list[LLMMessage]) -> CreateResult:
             tool_choice="none",
         )
         return response
-    else:
-        try:
-            client = OpenAIChatCompletionClient(api_key=os.environ.get("ZHIPU_API_KEY", ''),
-                                base_url=os.environ.get("COPILOT_BASE_URL", ''), 
-                                model_info=ModelInfo(
-                                    vision=False,
-                                    function_calling=True,
-                                    json_output=True,
-                                    family='gpt-4o',
-                                    structured_output=False,
-                                    multiple_system_messages=True,
-                                ), 
-                                model='gpt-4o',
-                                timeout=300,
-                                temperature=0.6,
-                                max_retries=3,
+    else:        
+        client = OpenAIChatCompletionClient(api_key=os.environ.get("ZHIPU_API_KEY", ''),
+                            base_url=os.environ.get("ZHIPU_BASE_URL", ''), 
+                            model_info=ModelInfo(
+                                vision=False,
+                                function_calling=True,
+                                json_output=True,
+                                family='gpt-4o',
+                                structured_output=False,
+                                multiple_system_messages=True,
+                            ), 
+                            model='glm-4.5',
+                            timeout=300,
+                            temperature=0.6,
+                            max_retries=3,
 
-                                )  # 请填写您自己的 API Key
-        
-            response = await client.create(
-                messages=messages,
-                # extra_create_args={"extra_body":{
-                #         "thinking": {
-                #             "type": "enabled",
-                #         },
-                #     }}
-            )
-            return response
-        except Exception as e:
-            print(f"❌ LLM调用出错: {e}")
-            traceback.print_exc()
-            return None
-
+                            )  # 请填写您自己的 API Key
+    
+        response = await client.create(
+            messages=messages,
+            extra_create_args={"extra_body":{
+                    "thinking": {
+                        "type": "enabled",
+                    },
+                }}
+        )
+        return response
 async def summary_exec_history(project, docs) -> list[str]:
     
     files:list[str]= []
@@ -339,20 +333,32 @@ async def run_deep_researcher(project, session_id, task):
     
     json_config = {
         "mcpServers": {
-                "command": {
+            "command": {
                 "command": "docker",
                 "args": ["exec", "-i", project, "node", "/usr/src/app/dist/index.js"],
                 "read_timeout_seconds": 600
-                },
-                "github": {
+            },
+            "github": {
                 "type": "streamable_http",
                 "url": "https://api.githubcopilot.com/mcp",
                 "headers": {
                     "Authorization": f"Bearer {github_token}"
                 }
+            },
+            "task":{
+                "type": "streamable_http",
+                "url": "http://localhost/mcp",
+                "headers": {
+                    "Authorization": os.getenv("SHRIMP_AUTH_TOKEN", ""),
+                    "X-Project-ID": f"{project}_2",
+                    "X-Session-ID": session_id
+                },
+                "sse_read_timeout": 600,
+                "timeout": 600
             }
         },
-        "allowedMcpServers": ["command", "github"]
+        "allowedMcpServers": ["command", "github", "task"],
+        "sessionServer": {"url": "http://localhost/api", "timeout": 30, "project_id": f"{project}_2", "session_id": session_id}
     }
     with open(research_mcp_file, "w") as f:
         json.dump(json_config, f, indent=4)
@@ -381,12 +387,24 @@ async def run_cpp_builder(project, session_id, task):
     json_config = {
         "mcpServers": {
             "command": {
-            "command": "docker",
-            "args": ["exec", "-i", project, "node", "/usr/src/app/dist/index.js"],
-            "read_timeout_seconds": 600
+                "command": "docker",
+                "args": ["exec", "-i", project, "node", "/usr/src/app/dist/index.js"],
+                "read_timeout_seconds": 600
+            },
+            "task": {
+                "type": "streamable_http",
+                "url": "http://localhost/mcp",
+                "headers": {
+                        "Authorization": os.getenv("SHRIMP_AUTH_TOKEN", ""),
+                        "X-Project-ID": f"{project}_2",
+                        "X-Session-ID": session_id
+                    },
+                    "sse_read_timeout": 600,
+                    "timeout": 600
             }
         },
-        "allowedMcpServers": ["command"]
+        "allowedMcpServers": ["command", "task"],
+        "sessionServer": {"url": "http://localhost/api", "timeout": 30, "project_id": f"{project}_2", "session_id": session_id}
     }
     with open(build_mcp_file, "w") as f:
         json.dump(json_config, f, indent=4)
@@ -553,16 +571,48 @@ async def run_build_iter(project, session_id):
     processor = await run_cpp_builder(project, session_id, build_task)
     return processor.build_completed
 
+async def run_builder_only(project, session_id):
+    print(f"\n--- 继续执行构建工程师智能体  ---")
+    build_task = (
+        f"# Task: Continue C++ Project Compilation and Build\n\n"
+        f"## Project Information\n"
+        f"- **Location**: /root/project/\n\n"
+        f"## Objective\n"
+        f"Continue the compilation and build process for this C++ project from source code, based on previous build attempts.\n\n"
+        f"## Core Build Principles\n"
+        f"1. **System-Native Tools Priority**:\n"
+        f"   - Prioritize system-native compiler versions (gcc/clang)\n"
+        f"   - Use system-provided standard library versions\n"
+        f"   - Prefer system package manager for third-party libraries\n\n"
+        f"2. **Environment-First Approach**:\n"
+        f"   - This is a mature, well-established codebase\n"
+        f"   - Focus on resolving issues through system environment adjustments\n"
+        f"   - Adjust build configurations and dependency versions as needed\n"
+        f"   - **Strictly prohibit source code modifications**\n\n"
+        f"## Execution Strategy\n"
+        f"1. Review previous build attempts and outcomes\n"
+        f"2. Resolve remaining dependency or configuration issues\n"
+        f"3. Handle compilation errors through environment optimization\n"
+        f"4. Verify successful build completion\n\n"
+        f"## Expected Deliverables\n"
+        f"- Successfully compiled binaries\n"
+        f"- Functional build environment\n"
+        f"- Documentation of any environment-specific adjustments made\n\n"
+        f"继续之前的工作，需经过严格的编译构建与测试校验、确保实际构建已完成"
+    )
+
+    processor = await run_cpp_builder(project, session_id, build_task)
+    return processor.build_completed
 
 async def run_build(project, session_id):
-    docs = await download_history(project, session_id)
+    docs = await download_history(project, session_id, "cpp_builder")
 
     if len(docs)==0:
         completed = await run_build_first(project, session_id)
         if completed:
             return True
-    for i in range(3):
-        completed = await run_build_iter(project, session_id)
+    else:
+        completed = await run_builder_only(project, session_id)
         if completed:
             return True
     return False
@@ -710,9 +760,41 @@ async def build_single_project(project_name: str):
 
 if __name__ == "__main__":    
     load_dotenv()  # 加载环境变量
-    projects = [      
-        "scylladb",
-        "tensorflow",        
+    # projects = [
+    #     "arangodb",
+    #     "blender",
+    #     "codelite",
+    #     "codon",
+    #     "foundationdb",
+    #     "qt-creator",
+    #     "rpcs3",
+    #     "seq",
+    #     "serenity",
+    #     "shotcut",
+    #     "treefrog-framework",
+    #     "userver",
+    #     "vireo",
+    #     "wav2letter",
+    #     "xtd"
+    # ]
+    projects = [
+    "x265",
+    "reactos",
+    "gameplay",
+    "aseprite",
+    "cocos2d-x",
+    "DOOM",       
+    "gcc",
+    "mongo",
+    "openFrameworks",
+    "tensorflow",
+    "mediapipe",
+    "scylladb",
+    "rt-thread",
+    "Paddle",
+    "MuseScore",
+    "Qv2ray",
+    "cquery",
     ]
 
     # 支持命令行参数指定单个项目

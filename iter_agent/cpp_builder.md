@@ -34,6 +34,16 @@ After all to-do items are completed, you need to submit `verify_task` for task v
 If there is a similar `Task` to the current task, but the task status does not match the actual situation, you need to update the task status and content through the `update_task` tool.
 
 
+# Some Tools You Can Use for more information
+
+search and get more information you need:
+1. **search_agent**: call a agent to search to find relevant information on the internet.
+2. **start_search**: search for files by name or content patterns (unified ripgrep-based search) within the codebase .
+3. **start_process**: use `grep` `ls` `find` command to search for specific content in the codebase.
+4. filesystem search results:
+   - **read_multiple_files**: read and analyze multiple files to extract relevant information.
+   - **read_file**: read and analyze a single file to extract relevant information.
+   - **list_directory**: list files and directories in a specified path to find relevant files.
 
 # Business Guide
 

@@ -63,8 +63,8 @@ class MarkdownChecker:
             raise ValueError("需要设置 OPENAI_API_KEY 环境变量或传入 API 密钥")
         
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
-        self.logs_dir = Path("/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs")
-        self.projects_file = Path("/home/wnk/code/wr124/cpp_build_new/cc_sdk/projects.txt")
+        self.logs_dir = Path("/home/wnk/code/wr124/cpp_build_new/cc_sdk/logs_glm4.6")
+        self.projects_file = Path("/home/wnk/code/wr124/cpp_build_new/cc_sdk/projects_hard.txt")
         
         # 系统提示词
         self.system_prompt = """你是一个专业的C/C++项目构建分析专家。你的任务是分析项目构建指南文档，判断项目是否构建成功。
